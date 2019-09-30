@@ -1,14 +1,11 @@
 import React from 'react';
 
-class Example extends React.Component {
-  render() {
-      console.log('number:' + JSON.stringify(this.props))
+const Example = ({example}) => {
     return (
       <div>
-        {this.props.number}
+        {example.number}
       </div>
-    );
-  }  
+    ); 
 }
 
 export default Example;
