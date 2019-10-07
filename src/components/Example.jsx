@@ -6,6 +6,8 @@ class Example extends React.Component {
     return (
       <div>
         {this.props.number}
+        HelloHelllo
+
       </div>
     );
   }  
