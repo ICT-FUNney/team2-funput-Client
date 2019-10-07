@@ -1,12 +1,16 @@
 import React from 'react';
-import { ADD_NUMBER, DECREASE_NUMBER } from '../actions/Example/ExampleActionType';
 
 class Example extends React.Component {
+
+    componentDidMount() {
+        this.props.getExampleRequest()
+    }
+
     handleClickAddButton = () => {
-        this.props.addNumber(ADD_NUMBER, 0)
+        this.props.addNumber(0)
     }
     handleClickDecreaseButton = () => {
-        this.props.decreseNumber(DECREASE_NUMBER, 0)
+        this.props.decreseNumber(0)
     }
 
     render() {
@@ -15,6 +19,7 @@ class Example extends React.Component {
                 <div>{this.props.example.number}</div>
                 <button onClick={this.handleClickAddButton}>+</button>
                 <button onClick={this.handleClickDecreaseButton}>-</button>
+                <div>{this.props.example.exampleData.hoge}</div>
             </div>
         )
     }

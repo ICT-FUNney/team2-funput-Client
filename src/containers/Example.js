@@ -1,4 +1,4 @@
-import { addNumber, decreaseNumber } from '../actions/Example/ExampleActionCreator'
+import { addNumber, decreaseNumber, getExampleRequest } from '../actions/Example/ExampleActionCreator'
 import { connect } from 'react-redux'
 import Example from '../components/Example'
 
@@ -10,7 +10,9 @@ const mapDispatchToProps = (dispatch) => ({
     addNumber: (number) => 
         dispatch(addNumber(number)),
     decreseNumber: (number) => 
-        dispatch(decreaseNumber(number))
+        dispatch(decreaseNumber(number)),
+    getExampleRequest: () => 
+        dispatch(getExampleRequest())
 });
 
 export default connect(

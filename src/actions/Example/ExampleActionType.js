@@ -1,3 +1,7 @@
 // actionTypeは全部大文字で書く
 export const ADD_NUMBER = 'ADD_NUMBER'
 export const DECREASE_NUMBER = 'ECREASE_NUMBER'
+
+export const GET_EXAMPLE_REQUEST = 'GET_EXAMPLE_REQUEST'
+export const GET_EXAMPLE_SUCCESS = 'GET_EXAMPLE_SUCCESS'
+export const GET_EXAMPLE_FAILED = 'GET_EXAMPLE_FAILED'

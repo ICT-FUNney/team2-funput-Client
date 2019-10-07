@@ -1,7 +1,12 @@
-import { ADD_NUMBER, DECREASE_NUMBER } from "../actions/Example/ExampleActionType";
+import { ADD_NUMBER, DECREASE_NUMBER, GET_EXAMPLE_SUCCESS } from "../actions/Example/ExampleActionType";
 
 const initialState = {
-    number: 0
+    number: 0,
+    exampleData: {
+        hoge: '',
+        fuga: '',
+        piyo: ''
+    }
 };
 
 const ExampleState = (state = initialState, action) => {
@@ -15,6 +20,11 @@ const ExampleState = (state = initialState, action) => {
             return {
                 ...state,
                 number: state.number - 1
+            }
+        case GET_EXAMPLE_SUCCESS:
+            return {
+                ...state,
+                exampleData: action.data
             }
         default:
             return state;
