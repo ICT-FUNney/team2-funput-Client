@@ -1,14 +1,18 @@
-import { addExample } from '../actions/Example/ExampleActionCreator'
+import { addNumber, decreaseNumber,addWords } from '../actions/Example/ExampleActionCreator'
 import { connect } from 'react-redux'
 import Example from '../components/Example'
 
 const mapStateToProps = (state) => ({
-    number: state.example.number 
+    example: state.example
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    example: (text) => 
-        dispatch(addExample(text))
+    addNumber: (number) =>
+      dispatch(addNumber(number)),
+    decreseNumber: (number) =>
+      dispatch(decreaseNumber(number)),
+    addWords: (words) =>
+      dispatch(addWords(words))
 });
 
 export default connect(
