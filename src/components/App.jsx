@@ -1,13 +1,14 @@
 import React from 'react';
+import Main from './Main';
+import './App.css'
 
-import Upload from './Upload';
+
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-      
-        <Upload />
+        <Main />
       </div>
     );
   }  
