@@ -4,14 +4,13 @@ import './App.css'
 
 
 
-class App extends React.Component {
-  render() {
+const App = () => {
+ 
     return (
       <div className="App">
         <Main />
       </div>
     );
-  }  
 }
 
 export default App;

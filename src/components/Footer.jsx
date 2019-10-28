@@ -1,12 +1,10 @@
 import React from 'react';//Reactをインポート
 
-class Footer extends React.Component{
-  render(){
+const Footer = () =>  { 
     return(
       <div>
         
       </div>
     );
   }
-}
 export default Footer;

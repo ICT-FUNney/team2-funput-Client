@@ -31,3 +31,24 @@
   color : red;
 
 }
+.text-center{
+  width: 500px;
+  height: 30vh;
+  margin: auto;
+  line-height: 30vh;
+  text-align: center;
+  border-style: dotted;
+}
+
+.list-group{
+  widows: 40px;
+  height:130px;
+  margin: auto;
+  text-align: center;
+  line-height: 5vh;
+  background : rgba(200, 236, 200, 0.993);
+}
+
+.fileData{
+  text-align: left;
+}

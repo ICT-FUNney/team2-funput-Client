@@ -1,12 +1,11 @@
 import React from 'react';//Reactをインポート
 
-class Header extends React.Component{
-  render(){
+const Header = () =>  {
     return(
       <div>
         
       </div>
     );
   }
-}
+
 export default Header;

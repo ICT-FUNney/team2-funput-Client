@@ -1,53 +1,45 @@
 import React, {useState,useCallback} from 'react'
 import { useDropzone } from 'react-dropzone'
+import './App.css'
 
 
+const Main = () =>  {
 
-function Main()  {
+const [value1, setValue1] = useState(10);//ただのカウンタ
 
-const [value1, setValue1] = useState('hogehoge');
-const [value2, setValue2] = useState("");
-
-
-   
-
-
-
-const onDrop = useCallback(acceptedFiles => {//画像ドロップ
-   
+const onDrop = (acceptedFiles => {//画像ドロップ
       console.log(acceptedFiles);
-      setValue2({
-        value2: acceptedFiles
-      });
-    }, []);
+    });
 
-const { isDragActive,getRootProps,getInputProps,acceptedFiles} = useDropzone ({
-  onDrop
-});
-    
-/*
-    handleClick(){
-      alert(JSON.stringify(value2[0].lastModified));
-    }
-    */
-  
+const { isDragActive,getRootProps,getInputProps,acceptedFiles}
+ = useDropzone (
+  {onDrop});
 
       return (
-        <div className="text-center mt-5">
+        <div className="text-center">
           
           <div {...getRootProps()}>
-              
                 <input {...getInputProps()} />
                 {!isDragActive && 'Click here or drop a file to upload!'}
-                
+                {isDragActive &&  "Drop it like it's hot!"}
               </div>
-
-                {isDragActive ? "Drop it like it's hot!" :'Click me or drag a file to upload!'}
+              
+              
+              <ul className="list-group">
+                <h3 className = "fileData">fileName</h3>
+                   {acceptedFiles.map((acceptedFile,i) => (
+                     <li key= {i} className="list-group-item list-group-item-success">{/*keyを指定*/}
+                        {acceptedFile.name}
+                      </li>
+                    ))}
+                </ul>
+                
     
-                <button className ="imgButton" onClick ={() => setValue2()}>投稿画像
-               </button>
+                <button className ="imgButton" onClick ={() => setValue1(value1+1)}>{value1}
+               </button> 
          </div>
       );
     };
+  
 
 export default Main

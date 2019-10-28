@@ -1,12 +1,10 @@
 import React from 'react';//Reactをインポート
 
-class Navi extends React.Component{
-  render(){
+const Navi = () =>  {  
     return(
       <div>
         
       </div>
     );
   }
-}
 export default Navi;
