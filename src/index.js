@@ -7,7 +7,6 @@ import { createStore, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import rootReducer from './reducers';
 import { Provider } from 'react-redux';
-import Example from './components/Example';
 import Main from './components/Main';
 
 
