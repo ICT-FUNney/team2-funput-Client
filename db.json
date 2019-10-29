@@ -20,5 +20,6 @@
     "hoge": "hoge",
     "fuga": "fuga",
     "piyo": "piyo"
-  }
+  },
+  "testText" : ["tests","test2"]
 }

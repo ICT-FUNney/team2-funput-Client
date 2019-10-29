@@ -6,6 +6,8 @@ import { GET_EXAMPLE_REQUEST } from "../../actions/Example/ExampleActionType";
 function* getExampleSaga() {
     const response = yield call(ExampleApi.getExample);
 
+    console.log(response);
+
     if (response.status === 200 && response.data) {
         yield put(getExampleSuccess(response.data));
       } else if (response.status === 400) {
@@ -16,7 +18,7 @@ function* getExampleSaga() {
 }
 
 const exampleSaga = [
-    takeLatest(GET_EXAMPLE_REQUEST, getExampleSaga) 
+    takeLatest(GET_EXAMPLE_REQUEST, getExampleSaga)
 ];
 
 export default exampleSaga;
