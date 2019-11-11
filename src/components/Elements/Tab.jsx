@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Tab = (props) => {
-    const [icon, name] = props
+    const {con, name} = props
     return (
         <div>
             Tab
