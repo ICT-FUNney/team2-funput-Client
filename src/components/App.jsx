@@ -1,17 +1,16 @@
 import React from 'react';
 import Header from './Areas/Header';
-import Home from './Pages/Home';
 import '../styles/App.css'
+import Main from './Pages/Main';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div id="container">
-        <Header />
-        <Main />
-      </div>
-    );
-  }
+
+const App = () => {
+  return (
+    <div id="contaner">
+      <Header />
+      <Main />
+    </div>
+  )
 }
 
 export default App;
