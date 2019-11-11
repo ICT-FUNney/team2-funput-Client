@@ -35,6 +35,17 @@ class ExampleApi{
       }
     }
 
+    // async createUser(){
+    //   console.log("delete");
+    //   try {
+    //     const res = await Axios.delete('/user/2');
+    //     console.log(res.status);
+    //     return res;
+    //   } catch (err) {
+    //     console.error(err);
+    //   }
+    // }
+
 }
 
 export default new ExampleApi()

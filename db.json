@@ -27,14 +27,14 @@
   ],
   "user": [
     {
-      "name": "Atta2",
-      "job": "Freelance Developer2",
-      "id": 1
+      "name": "Atta",
+      "job": "Freelance Developer",
+      "id": 3
     },
     {
       "name": "Atta",
       "job": "Freelance Developer",
-      "id": 2
+      "id": 4
     }
   ]
 }
