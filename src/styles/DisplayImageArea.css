@@ -1,0 +1,25 @@
+.imgButton {
+  color : blue;
+}
+
+.displayImageAreaContainer {
+  margin-top: 50px;
+}
+
+.displayAreaTitle {
+  width: 90vw;
+  font-size:20px;
+  margin: auto;
+}
+
+.displayImageContainer{
+  width: 90vw;
+  margin: auto;
+}
+
+.image {/*画像サイズを一定化*/
+  height: 120px;
+  width:120px;
+  border-radius: 25px;/*角丸く*/
+  margin-left: 10px;
+}

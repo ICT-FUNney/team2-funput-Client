@@ -1,6 +1,7 @@
 import React, { useState, /*useCallback */} from 'react'
-import Dropzone, { /*useDropzone*/ } from 'react-dropzone'
-import './App.css'
+import Dropzone from 'react-dropzone'
+import '../styles/UploadArea.css'
+import '../styles/DisplayImageArea.css'
 
 
 const Main = () => {
@@ -10,12 +11,12 @@ const Main = () => {
   const [URLs, setURLs] = useState([]);
 
   const onDrop = (acceptedFiles) => {//画像ドロップ 
-    const newURLs = [...URLs]
+    const newURLs = [...URLs]//スプレッド構文で、新しい配列を作成
     let url = ''
 
     acceptedFiles.forEach(acceptedFile => {
       url = URL.createObjectURL(acceptedFile)
-      newURLs.push(url)
+      newURLs.push(url)//配列の末尾に urlの要素を追加
     })
     console.log(acceptedFiles);
     console.log(newURLs);
@@ -25,24 +26,32 @@ const Main = () => {
   }
 
   return (
-    <div className="text-center">
-      <Dropzone onDrop={onDrop}>
-        {({ isDragActive, getInputProps, getRootProps }) =>
-          <div {...getRootProps()}>
-            <input {...getInputProps()} />
-         
+    <div>
+      {/*onDrop(isDragActive, getInputProps, getRootProps){
+          return <input {...getInputProps()} 
             {!isDragActive && 'Click here or drop a file to upload!'}
             {isDragActive && "Drop it like it's hot!"}
-          </div>
-        }
-      </Dropzone>
-      <p>Image</p>
+       }したのプログラムのイメージ*/}
 
-      {
-        URLs.map((url,i) => {
-          return <img src={url} alt="" key ={i}/>
-        })
-      }
+      <Dropzone onDrop={onDrop}>
+        {({ isDragActive,getInputProps, getRootProps }) => (
+          <div className={isDragActive ? 'uploadContainerOnDrag' : 'uploadContainer'} {...getRootProps()}>
+            <input {...getInputProps()} />
+             {isDragActive ? "Drop it like it's hot!" : 'Drag a file to upload!'}
+          </div>
+        )}
+      </Dropzone>
+
+      <div className='displayImageAreaContainer'>
+        <div className='displayAreaTitle'>Image will be previewed here!</div> 
+         <div className='displayImageContainer'>
+            {
+            URLs.map((url,i) => {
+              return <img className='image' src={url} alt="" key ={i}/>
+            })
+            }
+         </div>
+      </div>
 
       <button className="imgButton" onClick={() => setValue1(value1 + 1)}>
         タダノカウンタ{value1}
