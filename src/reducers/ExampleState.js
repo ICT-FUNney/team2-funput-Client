@@ -1,4 +1,4 @@
-import { ADD_NUMBER, DECREASE_NUMBER, GET_EXAMPLE_SUCCESS } from "../actions/Example/ExampleActionType";
+import { ADD_NUMBER, DECREASE_NUMBER, GET_EXAMPLE_SUCCESS } from "../actions/Example/ActionType";
 
 const initialState = {
     number: 0,

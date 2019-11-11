@@ -1,0 +1,18 @@
+#container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 150px 1fr;
+  grid-template-areas: 
+    "header"
+    "main";
+}
+
+#header {
+  grid-area: header;
+  background: white;
+}
+
+#main {
+  grid-area: main;
+  background: wheat;
+}

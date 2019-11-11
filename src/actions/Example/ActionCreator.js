@@ -1,4 +1,4 @@
-import { ADD_NUMBER, DECREASE_NUMBER, GET_EXAMPLE_REQUEST, GET_EXAMPLE_SUCCESS, GET_EXAMPLE_FAILED } from "./ExampleActionType";
+import { ADD_NUMBER, DECREASE_NUMBER, GET_EXAMPLE_REQUEST, GET_EXAMPLE_SUCCESS, GET_EXAMPLE_FAILED } from "./ActionType";
 
 export const addNumber = (number) => ({
     type: ADD_NUMBER,
