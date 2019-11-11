@@ -1,7 +1,7 @@
 import Axios from "./Axios";
 
 
-class ExampleApi{
+class ExampleApi {
     async getExample() {
         try {
             return await Axios.get('/exampleData')
@@ -9,7 +9,6 @@ class ExampleApi{
             throw error;
         }
     }
-
 }
 
-export default new ExampleApi()
+export default new ExampleApi();

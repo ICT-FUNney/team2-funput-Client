@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Tab = () => {
+const Tab = (props) => {
+    const [icon, name] = props
     return (
         <div>
             Tab
