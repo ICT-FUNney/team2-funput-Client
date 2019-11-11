@@ -20,5 +20,32 @@
     "hoge": "hoge",
     "fuga": "fuga",
     "piyo": "piyo"
-  }
+  },
+  "users":{
+    "b1018001": {
+      "number": "b1018001",
+      "name": "テスト太郎"
+    },
+    "b1018002": {
+      "number": "b1018002",
+      "name": "佐藤太郎"
+    }
+  },
+  "works":{
+    "b1018001":{
+        "number": "b1018001",
+        "uploads":{
+            "20191104":{
+                "work_title": "react todoアプリ画面",
+                "file_url": "ここにstorageに保存した際に生成されるurlの文字列が入る",
+                "description": "reactでtodoアプリ作ってみました! ここレビューして欲しいです!"
+            },
+            "20191205":{
+                "work_title": "typescript clean architecture",
+                "file_url": "ここにstorageに保存した際に生成されるurlの文字列が入る",
+                "description": "〜をレビューして欲しいです"
+            }
+        }
+    }
+}
 }
