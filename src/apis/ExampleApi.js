@@ -20,6 +20,21 @@ class ExampleApi{
       }
     }
 
+    async createUser(){
+      console.log("post");
+      try {
+        const res = await Axios.post('/user/',
+          {
+            name: 'Atta',
+            job: 'Freelance Developer'
+          });
+        console.log(res.data);
+        return res;
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
 }
 
 export default new ExampleApi()

@@ -9,12 +9,12 @@ function* getExampleSaga() {
     console.log(response);
 
     if (response.status === 200 && response.data) {
-        yield put(getExampleSuccess(response.data));
-      } else if (response.status === 400) {
-        yield put(getExampleFailed());
-      } else {
-        yield put(getExampleFailed());
-      }
+      yield put(getExampleSuccess(response.data));
+    } else if (response.status === 400) {
+      yield put(getExampleFailed());
+    } else {
+      yield put(getExampleFailed());
+    }
 }
 
 const exampleSaga = [

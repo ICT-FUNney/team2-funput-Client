@@ -21,5 +21,20 @@
     "fuga": "fuga",
     "piyo": "piyo"
   },
-  "testText" : ["tests","test2"]
+  "testText": [
+    "tests",
+    "test2"
+  ],
+  "user": [
+    {
+      "name": "Atta2",
+      "job": "Freelance Developer2",
+      "id": 1
+    },
+    {
+      "name": "Atta",
+      "job": "Freelance Developer",
+      "id": 2
+    }
+  ]
 }

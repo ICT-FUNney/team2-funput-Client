@@ -1,4 +1,4 @@
-import { ADD_NUMBER, DECREASE_NUMBER, GET_EXAMPLE_REQUEST, GET_EXAMPLE_SUCCESS, GET_EXAMPLE_FAILED, GET_TEXT_REQUEST, GET_TEXT_SUCCESS, GET_TEXT_FAILED, GET_TEXT_ADD } from "./ExampleActionType";
+import { ADD_NUMBER, DECREASE_NUMBER, GET_EXAMPLE_REQUEST, GET_EXAMPLE_SUCCESS, GET_EXAMPLE_FAILED, GET_TEXT_REQUEST, GET_TEXT_SUCCESS, GET_TEXT_FAILED, GET_TEXT_ADD, CREATE_USER } from "./ExampleActionType";
 
 export const addNumber = (number) => ({
     type: ADD_NUMBER,
@@ -39,4 +39,8 @@ export const getTextFailed = () => ({
 export const getTextAdd = (text) => ({
     type: GET_TEXT_ADD,
     text
+})
+
+export const createUser = () => ({
+    type: CREATE_USER
 })

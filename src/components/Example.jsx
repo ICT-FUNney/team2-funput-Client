@@ -3,8 +3,9 @@ import React from 'react';
 class Example extends React.Component {
 
   componentDidMount() {
-      this.props.getExampleRequest()
-      this.props.getTextRequest()
+    this.props.getExampleRequest()
+    this.props.getTextRequest()
+    this.props.createUser()
   }
 
   handleClickAddButton = () => {

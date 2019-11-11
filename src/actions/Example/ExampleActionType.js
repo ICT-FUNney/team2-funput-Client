@@ -11,3 +11,5 @@ export const GET_TEXT_SUCCESS = 'GET_TEXT_SUCCESS'
 export const GET_TEXT_FAILED = 'GET_TEXT_FAILED'
 
 export const GET_TEXT_ADD = 'GET_TEXT_ADD'
+
+export const CREATE_USER = 'CREATE_USER'

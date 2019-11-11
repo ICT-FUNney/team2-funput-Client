@@ -18,7 +18,7 @@ function* getTextSaga() {
 }
 
 const textSaga = [
-    takeLatest(GET_TEXT_REQUEST, getTextSaga)
+  takeLatest(GET_TEXT_REQUEST, getTextSaga)
 ];
 
 export default textSaga;

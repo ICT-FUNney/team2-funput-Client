@@ -1,4 +1,4 @@
-import { addNumber, decreaseNumber, getExampleRequest, getTextRequest, getTextAdd} from '../actions/Example/ExampleActionCreator'
+import { addNumber, decreaseNumber, getExampleRequest, getTextRequest, getTextAdd,createUser} from '../actions/Example/ExampleActionCreator'
 import { connect } from 'react-redux'
 import Example from '../components/Example'
 
@@ -16,7 +16,9 @@ const mapDispatchToProps = (dispatch) => ({
     getTextRequest: () =>
         dispatch(getTextRequest()),
     getTextAdd: (text) =>
-        dispatch(getTextAdd(text))
+        dispatch(getTextAdd(text)),
+    createUser: () =>
+        dispatch(createUser())
 });
 
 export default connect(
