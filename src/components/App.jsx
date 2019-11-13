@@ -8,6 +8,7 @@ import {getExampleRequest} from '../actions/Example/ActionCreator';
 import {getUsersRequest} from '../actions/Users/ActionCreator';
 import {getWorksRequest} from '../actions/Works/ActionCreator';
 import {postWorksRequest} from '../actions/Works/ActionCreator';
+import {postWorksDataRequest} from '../actions/Works/ActionCreator';
 
 
 const App = () => {

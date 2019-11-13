@@ -1,4 +1,4 @@
-import { GET_WORKS_REQUEST, GET_WORKS_SUCCESS, GET_WORKS_FAILED, POST_WORKS_REQUEST, POST_WORKS_SUCCESS, POST_WORKS_FAILED } from "./ActionType";
+import { GET_WORKS_REQUEST, GET_WORKS_SUCCESS, GET_WORKS_FAILED, POST_WORKS_REQUEST, POST_WORKS_SUCCESS, POST_WORKS_FAILED, POST_WORKS_DATA_REQUEST, POST_WORKS_DATA_SUCCESS, POST_WORKS_DATA_FAILED } from "./ActionType";
 
 export const getWorksRequest = () => ({
     type: GET_WORKS_REQUEST
@@ -26,4 +26,19 @@ export const postWorksSuccess = (works) => ({
 
 export const postWorksFailed = () => ({
     type: POST_WORKS_FAILED
+})
+
+
+
+export const postWorksDataRequest = () => ({
+    type: POST_WORKS_DATA_REQUEST
+})
+
+export const postWorksDataSuccess = (worksData) => ({
+    type: POST_WORKS_DATA_SUCCESS,
+    worksData
+})
+
+export const postWorksDataFailed = () => ({
+    type: POST_WORKS_DATA_FAILED
 })
