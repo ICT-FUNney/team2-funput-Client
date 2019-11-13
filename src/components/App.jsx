@@ -12,12 +12,14 @@ import {postWorksDataRequest} from '../actions/Works/ActionCreator';
 
 
 const App = () => {
+  const worksData = ["workPostTitle.values", "file_urls", "workPostComment.values"];
   const dispatch = useDispatch();
   useEffect(()=>{
     dispatch(getExampleRequest());
     dispatch(getUsersRequest());
     dispatch(getWorksRequest());
     dispatch(postWorksRequest());
+    dispatch(postWorksDataRequest(worksData));
   });
 
   return (

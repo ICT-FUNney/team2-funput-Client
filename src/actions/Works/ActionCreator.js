@@ -30,8 +30,9 @@ export const postWorksFailed = () => ({
 
 
 
-export const postWorksDataRequest = () => ({
-    type: POST_WORKS_DATA_REQUEST
+export const postWorksDataRequest = (worksData) => (console.log(worksData),{
+    type: POST_WORKS_DATA_REQUEST,
+    worksData : worksData
 })
 
 export const postWorksDataSuccess = (worksData) => ({

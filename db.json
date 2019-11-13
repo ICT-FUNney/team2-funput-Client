@@ -46,9 +46,9 @@
           "description": "〜をレビューして欲しいです"
         },
         "new": {
-          "work_title": "architecturffsdgdsew",
-          "file_url": "urlの文字列がdfgsff",
-          "description": "dsdfds"
+          "work_title": "workPostTitle.values",
+          "file_url": "file_urls",
+          "description": "workPostComment.values"
         }
       }
     }
