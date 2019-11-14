@@ -44,11 +44,6 @@
           "work_title": "typescript clean architecture",
           "file_url": "ここにstorageに保存した際に生成されるurlの文字列が入る",
           "description": "〜をレビューして欲しいです"
-        },
-        "new": {
-          "work_title": "workPostTitle.values",
-          "file_url": "file_urls",
-          "description": "workPostComment.values"
         }
       }
     }

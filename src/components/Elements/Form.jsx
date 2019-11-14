@@ -4,15 +4,20 @@ import {useDispatch } from 'react-redux';
 
 
 const Form = () => {
+  let workPostTitle;
+  let workPostComment;
+  let worksData;
+  const dispatch = useDispatch();
+
   const handleClickSubmitt = function(e){
       e.preventDefault();
-      const workPostTitle = document.getElementById("workPostTitle");
-      const workPostComment = document.getElementById("workPostComment");
-      const worksData = [workPostTitle.value, "file_url", workPostComment.value];
+      workPostTitle = document.getElementById("workPostTitle");
+      workPostComment = document.getElementById("workPostComment");
+      worksData = [workPostTitle.value, "file_url", workPostComment.value];
       console.log(worksData);
-
       console.log(workPostTitle.value);
       console.log(workPostComment.value);
+      dispatch(postWorksDataRequest(worksData));
       workPostTitle.value="";
       workPostComment.value="";
   }
@@ -28,7 +33,7 @@ const Form = () => {
           <div>コメント：</div>
           <input id="workPostComment"></input>
         </div>
-        <input type="submit" value="投稿する" onClick={handleClickSubmitt}/>
+        <input type="submit" value="投稿する" onClick={ handleClickSubmitt}/>
       </form>
     </div>
   )

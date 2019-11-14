@@ -18,8 +18,7 @@ const App = () => {
     dispatch(getExampleRequest());
     dispatch(getUsersRequest());
     dispatch(getWorksRequest());
-    dispatch(postWorksRequest());
-    dispatch(postWorksDataRequest(worksData));
+    //dispatch(postWorksDataRequest(worksData));
   });
 
   return (

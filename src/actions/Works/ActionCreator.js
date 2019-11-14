@@ -35,7 +35,7 @@ export const postWorksDataRequest = (worksData) => (console.log(worksData),{
     worksData : worksData
 })
 
-export const postWorksDataSuccess = (worksData) => ({
+export const postWorksDataSuccess = (worksData) => (console.log(worksData),{
     type: POST_WORKS_DATA_SUCCESS,
     worksData
 })

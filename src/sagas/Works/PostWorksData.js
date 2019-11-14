@@ -5,8 +5,10 @@ export function* postWorksDataSaga(worksData) {
   const work_title = worksData.worksData[0];
   const file_url = worksData.worksData[1];
   const description = worksData.worksData[2];
+  console.log(worksData);
   const response = yield call(postWorksData,{work_title,file_url,description});
   if (response.status === 201 && response.data) {
+    console.log(response.data);
     yield put(postWorksDataSuccess(response.data));
   } else if (response.status === 400) {
     yield put(postWorksDataFailed());

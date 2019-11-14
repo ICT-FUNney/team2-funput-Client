@@ -9,15 +9,16 @@ const WorksState = (state = initialState, action) => {
     switch (action.type) {
         case GET_WORKS_SUCCESS:
           return {
-            ...state,...action.works
+            ...action.works
           }
         case POST_WORKS_SUCCESS:
           return {
-            ...state,...action.works
+            ...action.works
           }
         case POST_WORKS_DATA_SUCCESS:
+        console.log(action.worksData);
           return {
-            ...state,...action.worksdata
+            ...action.worksData
           }
         default:
           return state;
