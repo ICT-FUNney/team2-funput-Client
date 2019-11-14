@@ -1,10 +1,10 @@
 import React from 'react';
-import Form from '../Elements/Form';
+import FormWorkData from '../Elements/FormWorkData';
 
 const Post = () => {
     return (
         <div>
-          <Form />
+          <FormWorkData />
         </div>
     )
 }
