@@ -1,9 +1,10 @@
 import React from 'react';
 import {postWorksDataRequest} from '../../actions/Works/ActionCreator';
 import {useDispatch } from 'react-redux';
+import '../../styles/FormWorkData.css'
 
 
-const Form = () => {
+const FormWorkData = () => {
   const dispatch = useDispatch();
   const handleClickSubmitt = function(e){
     e.preventDefault();
@@ -19,20 +20,25 @@ const Form = () => {
   }
 
   return (
-    <div id="form">
-      <form>
-        <div>
-          <div>作品タイトル：</div>
-          <input id="workPostTitle"></input>
-        </div>
-        <div>
-          <div>コメント：</div>
-          <input id="workPostComment"></input>
-        </div>
-        <input type="submit" value="投稿する" onClick={ handleClickSubmitt}/>
-      </form>
+
+    <div id="formWorkData">
+      <div className="container">
+        <form>
+          <div id="workPostTitle">
+            <div>
+              <input type="text" placeholder='作品名'></input>
+            </div>
+          </div>
+          <div id="workPostComment">
+            <div>
+              <textarea placeholder='作品名に関するコメント'></textarea>
+            </div>
+          </div>
+          <input id = 'submit' type="submit" value="投稿する" onClick={ handleClickSubmitt}/>
+        </form>
+      </div>
     </div>
   )
 }
 
-export default Form;
+export default FormWorkData;
