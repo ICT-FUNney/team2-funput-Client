@@ -1,0 +1,9 @@
+.headerTitle{
+text-align: left;
+font-size: 30px;
+color: coral;
+}
+
+.headerButton{
+  float: left;
+}
