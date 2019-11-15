@@ -8,8 +8,8 @@ const FormWorkData = () => {
   const dispatch = useDispatch();
   const handleClickSubmitt = function(e){
     e.preventDefault();
-    const workPostTitle = document.getElementById("workPostTitle");
-    const workPostComment = document.getElementById("workPostComment");
+    const workPostTitle = document.getElementById("wpt");
+    const workPostComment = document.getElementById("wpc");
     const worksData = [workPostTitle.value, "file_url", workPostComment.value];
     console.log(worksData);
     console.log(workPostTitle.value);
@@ -26,12 +26,12 @@ const FormWorkData = () => {
         <form>
           <div id="workPostTitle">
             <div>
-              <input type="text" placeholder='作品名'></input>
+              <input type="text" id="wpt" placeholder='作品名'></input>
             </div>
           </div>
           <div id="workPostComment">
             <div>
-              <textarea placeholder='作品名に関するコメント'></textarea>
+              <textarea id="wpc" placeholder='作品名に関するコメント'></textarea>
             </div>
           </div>
           <input id = 'submit' type="submit" value="投稿する" onClick={ handleClickSubmitt}/>
