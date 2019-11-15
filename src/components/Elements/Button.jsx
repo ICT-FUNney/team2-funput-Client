@@ -4,7 +4,7 @@ import '../../styles/Elements/Button.css'
 const Button = () => {
     return (
         <div>
-            Button
+            <button>フォロー</button>
         </div>
     )
 }
