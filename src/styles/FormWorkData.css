@@ -19,29 +19,29 @@
   background-color: white;
 }
 
-#workPostTitle{
+#wpt{
   height: 100%;
   grid-row: 1;
   grid-column: 1;
 }
 
-#workPostComment{
+#wpc{
   height: 100%;
   grid-row: 2;
   grid-column: 1;
 }
 
-#workPostTitle>div ,#workPostComment>div{
+#wpt>div ,#wpc>div{
   height: 100%;
   width: 100%;
 }
 
-#workPostComment textarea{
+#wpc textarea{
   height: 250px;
   line-height: 1.5em;
 }
 
-#workPostTitle input[type='text'],#workPostComment textarea{
+#wpt input[type='text'],#wpc textarea{
   box-sizing: border-box;
   height: 100%;
 	width: 100%;
@@ -56,7 +56,7 @@
 	box-shadow: none;
 }
 
-#workPostTitle input[type='text']{
+#wpt input[type='text']{
   border-bottom: 1px solid #AAA;
 }
 
