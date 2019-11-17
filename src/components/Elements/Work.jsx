@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState, /*useCallback */} from 'react';
 import Dropzone from 'react-dropzone'
 const Work = () => {
-  const [value1, setValue1] = useState(10);//ただのカウンタ
   const [value2, setValue2] = useState([]);
   const [URLs, setURLs] = useState([]);
 

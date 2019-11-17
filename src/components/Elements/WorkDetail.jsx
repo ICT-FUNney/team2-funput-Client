@@ -1,25 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 const WorkDetail = () => {
-    constructor(props) 
-        super(props);
-
-        this.state={
-            input:""
-        };
-    
-  return (
+    const [text1, setText1] = useState("");
+    const [text2, setText2] = useState("");
+    console.log(
+      `textBox1: ${text1}, textBox2: ${text2}`
+    );
+    return (
       <form>
-          <input type="text" 
-          value={this.state.input} 
-          onChange={this.handleChange}/>
-          <button>投稿</button>
-          </form>       
-  );
-}
-
-handleChange = e =>{
-    this.SVGElementInstanceList({input: e.currentTarget.value})
-}
+        <input
+          type="text"
+          onChange={(e: any) => setText1(e.target.value)}
+          value={text1}
+        />
+        <input
+          type="text"
+          onChange={(e: any) => setText2(e.target.value)}
+          value={text2}
+        />
+        <button>投稿</button>
+      </form>
+    );
+  };
 
 export default WorkDetail;
