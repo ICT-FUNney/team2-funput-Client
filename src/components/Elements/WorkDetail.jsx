@@ -9,12 +9,12 @@ const WorkDetail = () => {
       <form>
         <input
           type="text"
-          onChange={(e: any) => setText1(e.target.value)}
+          onChange={(e) => setText1(e.target.value)}
           value={text1}
         />
         <input
           type="text"
-          onChange={(e: any) => setText2(e.target.value)}
+          onChange={(e) => setText2(e.target.value)}
           value={text2}
         />
         <button>投稿</button>
