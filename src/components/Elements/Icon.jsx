@@ -4,7 +4,9 @@ import '../../styles/Elements/Icon.css'
 const Icon = () => {
     return (
         <div>
-            <div className='IconArea'>Icon</div>
+            <div className='IconArea'>
+                <span className='UserText'>UserName</span>
+            </div>
         </div>
     )
 }
