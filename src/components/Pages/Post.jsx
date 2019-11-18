@@ -5,8 +5,8 @@ const Post = () => {
     return (
         <div id='main'>
             <div id='postContainer'>
-                <div id='postArea'>post</div>
-                <div id='profileArea'>profile</div>
+                <div id='postArea'>profile</div>
+                <div id='profileArea'>post</div>
             </div>
         </div>
     )

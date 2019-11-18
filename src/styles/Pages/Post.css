@@ -1,11 +1,10 @@
 #postContainer {
   display: grid;
   height: 100vh;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: 850px 1fr;
   grid-template-areas: 
-    "profileArea postArea";
+    " postArea profileArea";
 }
-
 
 #postArea{
   grid-area: postArea;
