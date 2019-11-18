@@ -1,7 +1,6 @@
 import {getUsers} from "../../apis/Users/GetUsers";
-import { call, put, takeLatest } from 'redux-saga/effects';
+import { call, put } from 'redux-saga/effects';
 import { getUsersSuccess, getUsersFailed } from "../../actions/Users/ActionCreator";
-import { GET_USERS_REQUEST } from "../../actions/Users/ActionType";
 
 export function* getUsersSaga() {
   const response = yield call(getUsers);
