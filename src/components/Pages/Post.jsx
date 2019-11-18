@@ -1,12 +1,18 @@
 import React from 'react';
 import '../../styles/Pages/Post.css';
+import Profile from '../Areas/Profile';
 
 const Post = () => {
     return (
         <div id='main'>
             <div id='postContainer'>
-                <div id='postArea'>profile</div>
-                <div id='profileArea'>post</div>
+                <div id='postArea'>
+                    post
+                    </div>
+                <div id='profileArea'>
+                    <Profile />
+                </div>
+
             </div>
         </div>
     )
