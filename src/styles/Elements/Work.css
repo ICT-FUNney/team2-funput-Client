@@ -1,0 +1,15 @@
+.container{
+  background: red;
+  height : 600px;
+  width: 600px;
+}
+
+.container #WorkImage{
+  display: inline-block;
+}
+
+.container #WorkImage img{
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}

@@ -1,15 +1,19 @@
 import React from 'react';
+import '../../styles/Elements/Work.css'
 
 const Work = (props) => {
   const {userName,description,url} = props;
+
   return (
-    <div class="container">
-      <div ClassName="WorkImage"><img src={url}/></div>
-      <div ClassName = "description" >
+    <div className="container">
+      <div className = "WorkImage">
+        <img src={url} alt="No Image"/>
+      </div>
+      <div className = "description" >
         EachWorkTitle
         {description}
       </div>
-      <div ClassName="userName">{userName}</div>
+      <div className="userName">{userName}</div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ const ViewWorks = () => {
   };
   const data2 = {
     "work_title": "typescript clean architecture",
-    "file_url": "https://firebasestorage.googleapis.com/v0/b/takashi-s-works-uploads.appspot.com/o/images%2Frize_kana.jpg?alt=media&amp;token=65b4e5de-e381-48ca-bf11-3ed7b276e16b",
+    "file_url": "https://firebasestorage.googleapis.com/v0/b/takashi-s-works-uploads.appspot.com/o/images%2FThe%20Girl%20of%20the%20nightjpg.jpg?alt=media&amp;token=4655abd4-94bb-414e-9c01-3f8be485b283",
     "description": "〜をレビューして欲しいです"
   };
   const worksDatas = [data1, data2]
