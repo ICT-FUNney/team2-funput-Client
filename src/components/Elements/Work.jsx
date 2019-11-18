@@ -1,5 +1,6 @@
 import React, { useState, /*useCallback */} from 'react';
 import Dropzone from 'react-dropzone'
+import '../../styles/Work.css'
 const Work = () => {
   const [value, setValue] = useState([]);
   const [URLs, setURLs] = useState([]);

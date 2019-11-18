@@ -1,14 +1,22 @@
 import React from 'react';
 import Tab from '../Elements/Tab';
+import '../../styles/Areas/Header.css';
 
 const Header = () => {
+
     return (
         <div id='header'>
-            Header
-            <Tab icon={"url"} name={'HOME'} />
-            <Tab icon={"url"} name={'投稿'} />
-            <Tab icon={"url"} name={'いいね'} />
-        </div>
+            <div className='headerTitle'>FUNPUT</div>
+            <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"></link>
+            <div className='headerButton'>
+                <i className="fas fa-home fa-lg "></i>
+                <Tab icon={"url"} name={'HOME'} url={"/home"} />
+                <i className="fas fa-file-export"></i>
+                <Tab icon={"url"} name={'投稿'} url={"/post"} />
+                <i className="far fa-heart"></i>
+                <Tab icon={"url"} name={'いいね'} url={"/like"} />
+            </div>
+        </div >
     )
 }
 
