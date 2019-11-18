@@ -1,7 +1,7 @@
 import React, { useState, /*useCallback */} from 'react';
 import Dropzone from 'react-dropzone'
 const Work = () => {
-  const [value2, setValue2] = useState([]);
+  const [value, setValue] = useState([]);
   const [URLs, setURLs] = useState([]);
 
   const onDrop = (acceptedFiles) => {//画像ドロップ 
@@ -15,7 +15,7 @@ const Work = () => {
     console.log(acceptedFiles);
     console.log(newURLs);
 
-    setValue2(acceptedFiles);
+    setValue(acceptedFiles);
     setURLs(newURLs);
   }
 
@@ -37,7 +37,6 @@ const Work = () => {
       </Dropzone>
 
       <div className='displayImageAreaContainer'>
-        <div className='displayAreaTitle'>Image will be previewed here!</div> 
          <div className='displayImageContainer'>
             {
             URLs.map((url,i) => {
