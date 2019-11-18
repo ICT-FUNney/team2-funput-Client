@@ -15,10 +15,6 @@
   border-radius: 20px;
 }
 
-#postArea i{
-  
-}
-
 #profileArea {
   grid-area: profileArea;
   background: white;

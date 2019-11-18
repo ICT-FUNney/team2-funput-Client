@@ -7,8 +7,8 @@ const Home = () => {
         <div id='main'>
             <div id='homeContainer'>
                 <div id='profileArea'>
-                    <profile/>
-                    </div>
+                    <Profile />
+                </div>
                 <div id='workArea'><p>みんなの作品</p></div>
             </div>
         </div>
