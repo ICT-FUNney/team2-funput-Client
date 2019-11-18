@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Work = () => {
+const Work = (props) => {
+  const {userName,description,url} = props;
   return (
-    <div>
-      Tab
-        </div>
-  )
+    <div class="container">
+
+    </div>
+  );
 }
 
 export default Work;
