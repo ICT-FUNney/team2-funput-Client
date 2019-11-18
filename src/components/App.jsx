@@ -8,6 +8,7 @@ import { getExampleRequest } from '../actions/Example/ActionCreator';
 import { getUsersRequest } from '../actions/Users/ActionCreator';
 import { getWorksRequest } from '../actions/Works/ActionCreator';
 import FormWorkData from '../components/Elements/FormWorkData'
+import ViewWorks from '../components/Areas/ViewWorks'
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
     <div id="container">
       <Header />
       <Main />
+      <ViewWorks />
     </div>
   )
 }
