@@ -3,15 +3,14 @@ import Header from './Areas/Header';
 import { useDispatch } from 'react-redux';
 import '../styles/App.css';
 import Main from './Pages/Main';
-import Post from './Pages/Post';
+import {BrowserRouter} from 'react-router-dom'
 import { getExampleRequest } from '../actions/Example/ActionCreator';
 import { getUsersRequest } from '../actions/Users/ActionCreator';
 import { getWorksRequest } from '../actions/Works/ActionCreator';
-import FormWorkData from '../components/Elements/FormWorkData'
+
 
 
 const App = () => {
-  const worksData = ["workPostTitle.values", "file_urls", "workPostComment.values"];
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getExampleRequest());
@@ -21,8 +20,10 @@ const App = () => {
 
   return (
     <div id="container">
-      <Header />
-      <Main />
+      <BrowserRouter>
+        <Header />
+        <Main />
+      </BrowserRouter>
     </div>
   )
 }

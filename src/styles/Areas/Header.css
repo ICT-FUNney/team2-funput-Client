@@ -1,0 +1,21 @@
+.headerTitle{
+text-align: left;
+font-size: 30px;
+color: coral;
+}
+
+.fa-lg{
+  position: relative;
+  top: 70px;
+}
+
+.fa-file-export{
+  position: relative;
+  top: 70px;
+}
+
+.fa-heart{
+  position: relative;
+  top: 70px;
+}
+

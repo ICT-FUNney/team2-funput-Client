@@ -15,4 +15,6 @@
 #main {
   grid-area: main;
   background: wheat;
+  height: 100%;
+  width: 100%;
 }

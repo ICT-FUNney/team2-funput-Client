@@ -1,0 +1,29 @@
+#postContainer {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 850px 1fr;
+  grid-template-areas: 
+    " postArea profileArea";
+}
+
+#postArea{
+  grid-area: postArea;
+  background: white;
+  height: 80%;
+  padding: 0.5em 1em;
+  margin: 30px;
+  border-radius: 20px;
+}
+
+#postArea i{
+  
+}
+
+#profileArea {
+  grid-area: profileArea;
+  background: white;
+  height: 70%;
+  padding: 0.5em 1em;
+  margin: 30px;
+  border-radius: 20px;
+}

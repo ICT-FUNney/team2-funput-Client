@@ -1,10 +1,19 @@
 import React from 'react';
-import FormWorkData from '../Elements/FormWorkData';
+import '../../styles/Pages/Post.css';
+import Profile from '../Areas/Profile';
 
 const Post = () => {
     return (
-        <div>
-          <FormWorkData />
+        <div id='main'>
+            <div id='postContainer'>
+                <div id='postArea'>
+                    post
+                    </div>
+                <div id='profileArea'>
+                    <Profile />
+                </div>
+
+            </div>
         </div>
     )
 }
