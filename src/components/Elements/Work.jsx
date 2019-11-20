@@ -10,7 +10,6 @@ const Work = (props) => {
         <img src={url} alt="No Image"/>
       </div>
       <div className = "description" >
-        EachWorkTitle
         {description}
       </div>
       <div className="userName">{userName}</div>

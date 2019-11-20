@@ -1,15 +1,28 @@
 .container{
+  box-sizing: border-box;
   background: red;
-  height : 600px;
-  width: 600px;
+  height : 300px;
+  width: 300px;
+  padding: 10px 35px;
 }
 
-.container #WorkImage{
-  display: inline-block;
+.container .WorkImage{
+  text-align: center;
+  height : 230px;
+  padding-bottom: 10px;
 }
 
-.container #WorkImage img{
-  width: 500px;
-  height: 500px;
+.container .WorkImage img{
+  border-radius: 10%;
+  width: 230px;
+  height: 230px;
   object-fit: cover;
+}
+
+.container .description, .container .userName{
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
 }

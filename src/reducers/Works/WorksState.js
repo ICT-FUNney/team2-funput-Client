@@ -9,7 +9,7 @@ const WorksState = (state = initialState, action) => {
     switch (action.type) {
         case GET_WORKS_SUCCESS:
           return {
-            ...action.works
+            works:{...action.works}
           }
         case POST_WORKS_SUCCESS:
           return {

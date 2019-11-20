@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Header from './Areas/Header';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import '../styles/App.css';
 import Main from './Pages/Main';
 import {BrowserRouter} from 'react-router-dom'
@@ -11,20 +11,19 @@ import FormWorkData from '../components/Elements/FormWorkData'
 import ViewWorks from '../components/Areas/ViewWorks'
 
 
-const App = () => {
+const App = (props) => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getExampleRequest());
     dispatch(getUsersRequest());
-    dispatch(getWorksRequest());
+    //dispatch(getWorksRequest());
   });
-
   return (
     <div id="container">
       <BrowserRouter>
         <Header />
         <Main />
-        <ViewWorks />
+        <ViewWorks data={props}/>
       </BrowserRouter>
     </div>
   )
