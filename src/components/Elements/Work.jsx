@@ -7,7 +7,7 @@ const Work = (props) => {
   return (
     <div className="container">
       <div className = "WorkImage">
-        <img src={url} alt="No Image"/>
+        <img src={url} alt={url}/>
       </div>
       <div className = "description" >
         {description}
@@ -16,6 +16,5 @@ const Work = (props) => {
     </div>
   );
 }
-// <img src="https://firebasestorage.googleapis.com/v0/b/takashi-s-works-uploads.appspot.com/o/images%2Frize_kana.jpg?alt=media&amp;token=65b4e5de-e381-48ca-bf11-3ed7b276e16b">
 
 export default Work;

@@ -14,7 +14,7 @@ function useUserHook() {
   return works;
 }
 
-const ViewWorks = (props) => {
+const ViewWorks = () => {
   const data = useUserHook();
 
   return (

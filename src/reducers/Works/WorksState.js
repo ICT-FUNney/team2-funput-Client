@@ -13,12 +13,12 @@ const WorksState = (state = initialState, action) => {
           }
         case POST_WORKS_SUCCESS:
           return {
-            ...action.works
+            works:{...action.works}
           }
         case POST_WORKS_DATA_SUCCESS:
         console.log(action.worksData);
           return {
-            ...action.worksData
+            works:{...action.works}
           }
         default:
           return state;
