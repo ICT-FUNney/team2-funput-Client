@@ -8,7 +8,6 @@ import { getExampleRequest } from '../actions/Example/ActionCreator';
 import { getUsersRequest } from '../actions/Users/ActionCreator';
 import { getWorksRequest } from '../actions/Works/ActionCreator';
 import FormWorkData from '../components/Elements/FormWorkData'
-import ViewWorks from '../components/Areas/ViewWorks'
 
 
 const App = (props) => {
@@ -23,7 +22,6 @@ const App = (props) => {
       <BrowserRouter>
         <Header />
         <Main />
-        <ViewWorks />
       </BrowserRouter>
     </div>
   )

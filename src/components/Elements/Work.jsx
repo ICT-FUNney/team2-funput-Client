@@ -5,7 +5,7 @@ const Work = (props) => {
   const {userName,description,url} = props;
 
   return (
-    <div className="container">
+    <div className="work-container">
       <div className = "WorkImage">
         <img src={url} alt={url}/>
       </div>

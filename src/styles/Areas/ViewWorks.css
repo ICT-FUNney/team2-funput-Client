@@ -1,0 +1,28 @@
+.ViewWorks-container{
+  background-color: #FFFFFF;
+  border-radius: 2%;
+  margin: 20px;
+  width: 80%;
+}
+
+.ViewWorks-Works{
+  display: inline-flex;
+  flex-flow: row-reverse wrap-reverse;
+  justify-content: space-around;
+}
+
+.ViewWorks-Works Work{
+  display: inline-block;
+}
+
+.ViewWorks-top{
+  margin-top: 15px;
+  margin-left: 30px;
+  color: orange;
+  padding: 2px 15px;
+  font-weight: bold;
+  display: inline-block;
+  box-sizing: border-box;
+	border: 1px solid dimgray;
+	border-radius: 4px;
+}
