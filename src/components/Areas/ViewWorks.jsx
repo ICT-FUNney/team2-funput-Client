@@ -23,7 +23,6 @@ const ViewWorks = (props) => {
       <div>
         {
           Object.keys(data.works).length ? Object.keys(data.works.b1018001.uploads).map((key,index)=>{
-            console.log(data.works.b1018001.uploads[key]);
             return <Work userName="hoge" description={data.works.b1018001.uploads[key].description} url={data.works.b1018001.uploads[key].file_url} key={index}/>
           }) : <div>false</div>
         }

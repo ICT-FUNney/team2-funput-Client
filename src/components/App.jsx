@@ -16,14 +16,14 @@ const App = (props) => {
   useEffect(() => {
     dispatch(getExampleRequest());
     dispatch(getUsersRequest());
-    //dispatch(getWorksRequest());
+    dispatch(getWorksRequest());
   });
   return (
     <div id="container">
       <BrowserRouter>
         <Header />
         <Main />
-        <ViewWorks data={props}/>
+        <ViewWorks />
       </BrowserRouter>
     </div>
   )
