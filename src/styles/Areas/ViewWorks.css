@@ -1,14 +1,15 @@
-.ViewWorks-container{
+/* .ViewWorks-container{
   background-color: #FFFFFF;
   border-radius: 2%;
   margin: 20px;
   width: 80%;
-}
+} */
 
 .ViewWorks-Works{
   display: inline-flex;
-  flex-flow: row-reverse wrap-reverse;
-  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .ViewWorks-Works Work{
