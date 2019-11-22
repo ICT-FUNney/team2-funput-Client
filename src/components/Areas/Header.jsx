@@ -10,11 +10,11 @@ const Header = () => {
             <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"></link>
             <div >
                 <i className="fas fa-home fa-lg "></i>
-                <Tab icon={"url"} name={'HOME'} url={"/home"} />
+                <Tab name={'HOME'} url={"/home"} />
                 <i className="fas fa-file-export"></i>
-                <Tab icon={"url"} name={'投稿'} url={"/post"} />
+                <Tab name={'投稿'} url={"/post"} />
                 <i className="far fa-heart"></i>
-                <Tab icon={"url"} name={'いいね'} url={"/like"} />
+                <Tab name={'いいね'} url={"/like"} />
             </div>
         </div >
     )

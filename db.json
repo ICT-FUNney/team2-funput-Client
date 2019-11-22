@@ -16,11 +16,6 @@
   "profile": {
     "name": "typicode"
   },
-  "exampleData": {
-    "hoge": "hoge",
-    "fuga": "fuga",
-    "piyo": "piyo"
-  },
   "users": {
     "b1018001": {
       "number": "b1018001",
@@ -42,7 +37,7 @@
         },
         "20191205": {
           "work_title": "typescript clean architecture",
-          "file_url": "ここにstorageに保存した際に生成されるurlの文字列が入る",
+          "file_url": "https://firebasestorage.googleapis.com/v0/b/takashi-s-works-uploads.appspot.com/o/images%2Fface.jpg?alt=media&token=8247b8f6-7239-4285-932f-04f03284ce7d",
           "description": "〜をレビューして欲しいです"
         },
         "20191015131255": {
@@ -52,7 +47,7 @@
         },
         "2019101815025": {
           "work_title": "タイトル",
-          "file_url": "file_url",
+          "file_url": "https://pbs.twimg.com/media/D9Bx40QUEAcIKVf?format=jpg&name=4096x4096",
           "description": "コメント"
         },
         "201910181568": {
@@ -62,17 +57,12 @@
         },
         "20191018154222": {
           "work_title": "ｄｆｓｇｓｄｆ",
-          "file_url": "file_url",
+          "file_url": "https://i.pximg.net/img-master/img/2018/05/04/17/10/17/68571067_p0_master1200.jpg",
           "description": "ｚｄｆｇｓ"
-        },
-        "20191018154231": {
-          "work_title": "",
-          "file_url": "file_url",
-          "description": ""
         },
         "2019101815596": {
           "work_title": "hoho",
-          "file_url": "file_url",
+          "file_url": "https://firebasestorage.googleapis.com/v0/b/takashi-s-works-uploads.appspot.com/o/images%2FThe%20Girl%20of%20the%20nightjpg.jpg?alt=media&amp;token=4655abd4-94bb-414e-9c01-3f8be485b283",
           "description": "hihih"
         }
       }

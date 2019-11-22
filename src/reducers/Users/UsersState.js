@@ -8,7 +8,7 @@ const UsersState = (state = initialState, action) => {
     switch (action.type) {
         case GET_USERS_SUCCESS:
             return {
-              ...action.users
+              users:{...action.users}
             }
         default:
             return state;
