@@ -16,11 +16,6 @@
   "profile": {
     "name": "typicode"
   },
-  "exampleData": {
-    "hoge": "hoge",
-    "fuga": "fuga",
-    "piyo": "piyo"
-  },
   "users": {
     "b1018001": {
       "number": "b1018001",
