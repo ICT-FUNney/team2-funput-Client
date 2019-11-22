@@ -1,6 +1,6 @@
 #homeContainer {
   display: grid;
-  height: 100vh;
+  height: auto;
   grid-template-columns: 250px 1fr;
   grid-template-areas: 
     "profileArea workArea";
@@ -9,7 +9,7 @@
 #profileArea {
   grid-area: profileArea;
   background: white;
-  height: 70%;
+  height: 70px;
   padding: 0.5em 1em;
   margin: 30px;
   border-radius: 20px;
@@ -19,7 +19,7 @@
 #workArea {
   grid-area: workArea;
   background: white;
-  height: 90%;
+  height: auto;
   padding: 0.1em 1em;
   margin: 30px;
   border-radius: 20px;
