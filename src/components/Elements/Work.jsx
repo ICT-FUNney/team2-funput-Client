@@ -1,7 +1,15 @@
-import React, { useState, /*useCallback */} from 'react';
+import React, { useState, /*useCallback */ } from 'react'
 import Dropzone from 'react-dropzone'
-import '../../styles/Work.css'
-const Work = () => {
+import '../../styles/Elements/Work.css'
+
+const Work = (props) => {
+  /* const {userName,description,url} = props;
+   return (
+     <div class="container">
+ 
+     </div>
+   );
+ }*/
   const [value, setValue] = useState([]);
   const [URLs, setURLs] = useState([]);
 
@@ -23,33 +31,34 @@ const Work = () => {
   return (
     <div>
       {/*onDrop(isDragActive, getInputProps, getRootProps){
-          return <input {...getInputProps()} 
-            {!isDragActive && 'Click here or drop a file to upload!'}
-            {isDragActive && "Drop it like it's hot!"}
-       }したのプログラムのイメージ*/}
+        return <input {...getInputProps()} 
+          {!isDragActive && 'Click here or drop a file to upload!'}
+          {isDragActive && "Drop it like it's hot!"}
+     }したのプログラムのイメージ*/}
 
       <Dropzone onDrop={onDrop}>
-        {({ isDragActive,getInputProps, getRootProps }) => (
+        {({ isDragActive, getInputProps, getRootProps }) => (
           <div className={isDragActive ? 'uploadContainerOnDrag' : 'uploadContainer'} {...getRootProps()}>
             <input {...getInputProps()} />
-             {isDragActive ? "Drop it like it's hot!" : 'Drag a file to upload!'}
+            {isDragActive ? "ファイル選択済" : 'ファイルを選択'}
           </div>
         )}
       </Dropzone>
 
       <div className='displayImageAreaContainer'>
-         <div className='displayImageContainer'>
-            {
-            URLs.map((url,i) => {
-              return <img className='image' src={url} alt="" key ={i}/>
+        <div className='displayAreaTitle'></div>
+        <div className='displayImageContainer'>
+          {
+            URLs.map((url, i) => {
+              return <img className='image' src={url} alt="" key={i} />
             })
-            }
-         </div>
+          }
+        </div>
       </div>
 
-     
     </div>
   );
 };
+
 
 export default Work;
