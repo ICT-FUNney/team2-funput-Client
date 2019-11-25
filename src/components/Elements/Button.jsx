@@ -4,7 +4,7 @@ import React from 'react';
 const Button = () => {
     return (
         <div>
-            Buttons
+            <button>フォロー</button>
         </div>
     )
 }

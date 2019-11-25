@@ -8,6 +8,8 @@ const Profile = () => {
         <div>
             <Icon />
             <Button />
+            <span className='profileTitle'>自己紹介</span>
+            <div className='worksTitle'>今までの作品</div>
         </div>
     )
 }
