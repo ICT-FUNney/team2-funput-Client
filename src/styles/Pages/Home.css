@@ -1,6 +1,6 @@
 #homeContainer {
   display: grid;
-  height: auto;
+  height: 750px;
   grid-template-columns: 250px 1fr;
   grid-template-areas: 
     "profileArea workArea";

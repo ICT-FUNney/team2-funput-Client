@@ -1,33 +1,52 @@
-.work-container{
-  box-sizing: border-box;
-  background: #FFFFFF;
-  height : 300px;
-  width: 300px;
-  padding: 10px 35px;
-  margin: 5px;
-  text-align: center;
-}
 
-.work-container .WorkImage{
-  text-align: center;
-  height : 230px;
-  margin-bottom: 10px;
-  border-radius: 10%;
-  border: 1px solid dimgray;
-  background: silver;
-}
+.displayImageAreaContainer {
+    margin-top: 50px;
+  }
+  
+  
+  .displayImageContainer{
+    width: 90vw;
+    margin: auto;
+  }
+  
+  .image {/*画像サイズを一定化*/
+    height: 120px;
+    width:120px;
+    border-radius: 25px;/*角丸く*/
+    margin-left: 10px;
+  }
 
-.work-container .WorkImage img{
-  border-radius: 10%;
-  width: 230px;
-  height: 230px;
-  object-fit: cover;
-}
+  
+.uploadContainerOnDrag {
+    width: 15vw;
+    height: 10vh;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: palegreen;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .uploadContainer {
+    width: 15vw;
+    height: 10vh;
+    margin: auto;
+    border-radius: 20px;
+    background-color: dodgerblue;
+    font-weight: bold;
+    position: relative;
 
-.work-container .description, .work-container .userName{
-  overflow: hidden;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 15px;
-}
+  }
+  
+
+
+.uploadText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+  }

@@ -1,20 +1,63 @@
-import React from 'react';
+import React, { useState, /*useCallback */ } from 'react'
+import Dropzone from 'react-dropzone'
 import '../../styles/Elements/Work.css'
 
 const Work = (props) => {
-  const {userName,description,url} = props;
+  /* const {userName,description,url} = props;
+   return (
+     <div class="container">
+ 
+     </div>
+   );
+ }*/
+  const [value, setValue] = useState([]);
+  const [URLs, setURLs] = useState([]);
+
+  const onDrop = (acceptedFiles) => {//画像ドロップ 
+    const newURLs = [...URLs]//スプレッド構文で、新しい配列を作成
+    let url = ''
+
+    acceptedFiles.forEach(acceptedFile => {
+      url = URL.createObjectURL(acceptedFile)
+      newURLs.push(url)//配列の末尾に urlの要素を追加
+    })
+    console.log(acceptedFiles);
+    console.log(newURLs);
+
+    setValue(acceptedFiles);
+    setURLs(newURLs);
+  }
 
   return (
-    <div className="work-container">
-      <div className = "WorkImage">
-        <img src={url} alt={url}/>
+    <div>
+      {/*onDrop(isDragActive, getInputProps, getRootProps){
+        return <input {...getInputProps()} 
+          {!isDragActive && 'Click here or drop a file to upload!'}
+          {isDragActive && "Drop it like it's hot!"}
+     }したのプログラムのイメージ*/}
+
+      <Dropzone onDrop={onDrop}>
+        {({ isDragActive, getInputProps, getRootProps }) => (
+          <div className={isDragActive ? 'uploadContainerOnDrag' : 'uploadContainer'} {...getRootProps()}>
+            <input {...getInputProps()} />
+            <span className='uploadText'>{isDragActive ? "ファイル選択済" : 'ファイルを選択'}</span>
+          </div>
+        )}
+      </Dropzone>
+
+      <div className='displayImageAreaContainer'>
+        <div className='displayImageContainer'>
+          {
+            URLs.map((url, i) => {
+              return <img className='image' src={url} alt="" key={i} />
+            })
+          }
+        </div>
       </div>
-      <div className = "description" >
-        {description}
-      </div>
-      <div className="userName">{userName}</div>
+
     </div>
   );
-}
+};
+
 
 export default Work;
