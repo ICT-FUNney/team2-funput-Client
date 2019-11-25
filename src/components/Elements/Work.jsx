@@ -40,13 +40,12 @@ const Work = (props) => {
         {({ isDragActive, getInputProps, getRootProps }) => (
           <div className={isDragActive ? 'uploadContainerOnDrag' : 'uploadContainer'} {...getRootProps()}>
             <input {...getInputProps()} />
-            {isDragActive ? "ファイル選択済" : 'ファイルを選択'}
+            <span className='uploadText'>{isDragActive ? "ファイル選択済" : 'ファイルを選択'}</span>
           </div>
         )}
       </Dropzone>
 
       <div className='displayImageAreaContainer'>
-        <div className='displayAreaTitle'></div>
         <div className='displayImageContainer'>
           {
             URLs.map((url, i) => {

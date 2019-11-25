@@ -21,22 +21,32 @@
     width: 15vw;
     height: 10vh;
     margin: auto;
-    line-height: 30vh;
     text-align: center;
     border-radius: 20px;
     background-color: palegreen;
-    font-weight: bold
+    font-weight: bold;
+    position: relative;
   }
   
   .uploadContainer {
     width: 15vw;
     height: 10vh;
     margin: auto;
-    line-height: 30vh;
-    text-align: center;
     border-radius: 20px;
     background-color: dodgerblue;
-    font-weight: bold
+    font-weight: bold;
+    position: relative;
 
   }
   
+
+
+.uploadText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+  }

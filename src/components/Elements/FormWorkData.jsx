@@ -29,6 +29,7 @@ const FormWorkData = () => {
 
     <div id="formWorkData">
       <div className="container">
+          <form>
           <div id="wpt">
             <div>
               <input id="workPostTitle" type="text" value={workPostTitle} onChange={onWorkPostTitleChange} placeholder='作品名'></input>
@@ -39,7 +40,9 @@ const FormWorkData = () => {
               <textarea id = "workPostComment" value={workPostComment} onChange = {onWorkPostComment} placeholder='投稿内容'></textarea>
             </div>
           </div>
-          <input id = 'submit' type="submit" value="投稿する" onClick={ handleClickSubmitt}/>
+          <input id = 'submit' type="submit" value="投稿する" onClick={ handleClickSubmitt}/>    
+          </form>
+          
       </div>
     </div>
   )
