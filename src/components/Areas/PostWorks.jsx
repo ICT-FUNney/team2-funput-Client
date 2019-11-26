@@ -1,11 +1,11 @@
 import React from 'react';
 import FormWorkData from '../Elements/FormWorkData';
-import Work from '../Elements/Work';
+import DropZone from '../Elements/DropZone';
 const PostWorks = () => {
     return (
         <div>
-            <Work/>
-            <FormWorkData/>
+            <DropZone />
+            <FormWorkData />
         </div>
     )
 }
