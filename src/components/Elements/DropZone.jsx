@@ -27,7 +27,7 @@ const DropZone = () => {
         {({ isDragActive, getInputProps, getRootProps }) => (
           <div className={isDragActive ? 'uploadContainerOnDrag' : 'uploadContainer'} {...getRootProps()}>
             <input {...getInputProps()} />
-            <span className='uploadText'>{isDragActive ? "ファイル選択済" : 'ファイルを選択'}</span>
+            <span className='uploadText'>{isDragActive ? "Completed" : 'Drag Here! or Select Files!'}</span>
           </div>
         )}
       </Dropzone>

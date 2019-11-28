@@ -1,7 +1,24 @@
-.headerTitle{
+#headerContainer {
+  display: grid;
+  height: 150px;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+  "headerIconArea headerTitleArea";
+}
+
+#headerIconArea {
+  font-size: 20px;
+  margin: 20px;
+}
+
+#headerTitleArea{
 text-align: left;
-font-size: 30px;
-color: coral;
+}
+
+.headerTitle {
+  text-align: left;
+  font-size: 30px;
+  color: coral;
 }
 
 .fa-lg{
