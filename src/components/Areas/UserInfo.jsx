@@ -9,7 +9,7 @@ const UserInfo = () => {
             <Icon />
             <Button />
             <span className='userInfoTitle'>自己紹介</span>
-            <div className='userInfoTitle'>今までの作品</div>
+            <span className='userInfoTitle'>今までの作品</span>
         </div>
     )
 }

@@ -9,7 +9,7 @@ const WorkDetail = (props) => {
     description: "これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。"
   }
 
-  const userInfo =
+  const userInfo = {}
   return (
     <div id="wd-container">
       <div id = "wdm-container">
@@ -20,7 +20,7 @@ const WorkDetail = (props) => {
       <div id = "wdc-container">
         <div class = "comment-style">
           <div class = "user-info">
-            <img src = "https://firebasestorage.googleapis.com/v0/b/takashi-s-works-uploads.appspot.com/o/images%2Fface.jpg?alt=media&token=8247b8f6-7239-4285-932f-04f03284ce7d">
+            <img src = "https://firebasestorage.googleapis.com/v0/b/takashi-s-works-uploads.appspot.com/o/images%2Fface.jpg?alt=media&token=8247b8f6-7239-4285-932f-04f03284ce7d"/>
           </div>
         </div>
       </div>

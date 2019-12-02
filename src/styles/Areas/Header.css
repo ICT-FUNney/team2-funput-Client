@@ -1,21 +1,32 @@
 .headerTitle{
 text-align: left;
-font-size: 30px;
+font-size: 40px;
+font-weight: bold;
 color: coral;
+margin-top: 20px;
 }
 
 .fa-lg{
   position: relative;
-  top: 70px;
+  margin-top: 45px;
 }
 
 .fa-file-export{
   position: relative;
-  top: 70px;
+  margin-left: 20px;
+  margin-top: 45px;
 }
 
 .fa-heart{
   position: relative;
-  top: 70px;
+  margin-left: 20px;
+  margin-top: 45px;
+ 
 }
 
+a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-top:45px;
+  }
+  

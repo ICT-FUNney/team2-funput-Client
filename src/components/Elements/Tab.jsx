@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import '../../styles/Elements/Tab.css'
 
 const Tab = (props) => {
-    const { name, url } = props;
+    const { url, name } = props;
     const history = useHistory();
 
     const handleClick = () => {
