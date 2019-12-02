@@ -1,15 +1,15 @@
 #homeContainer {
   display: grid;
-  height: 750px;
+  height: auto;
   grid-template-columns: 250px 1fr;
   grid-template-areas: 
-    "profileArea workArea";
+    "userInfoArea workArea";
 }
 
-#profileArea {
-  grid-area: profileArea;
+#userInfoArea {
+  grid-area: userInfoArea;
   background: white;
-  height: 70px;
+  height: 70%;
   padding: 0.5em 1em;
   margin: 30px;
   border-radius: 20px;
