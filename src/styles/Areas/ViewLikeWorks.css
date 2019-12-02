@@ -1,0 +1,29 @@
+/* .ViewLikeWorks-container{
+  background-color: #FFFFFF;
+  border-radius: 2%;
+  margin: 20px;
+  width: 80%;
+} */
+
+.ViewLikeWorks-Works{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.ViewLikeWorks-Works Work{
+  display: inline-block;
+}
+
+.ViewLikeWorks-top{
+  margin-top: 15px;
+  margin-left: 30px;
+  color: orange;
+  padding: 2px 15px;
+  font-weight: bold;
+  display: inline-block;
+  box-sizing: border-box;
+	border: 1px solid dimgray;
+	border-radius: 4px;
+}
