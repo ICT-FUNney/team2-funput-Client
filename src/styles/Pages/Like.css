@@ -1,0 +1,32 @@
+#homeContainer {
+  display: grid;
+  height: 750px;
+  grid-template-columns: 250px 1fr;
+  grid-template-areas: 
+    "userInfoArea likeArea";
+}
+
+#userInfoArea {
+  grid-area: userInfoArea;
+  background: white;
+  height: 70px;
+  padding: 0.5em 1em;
+  margin: 30px;
+  border-radius: 20px;
+  content: "\f083";
+}
+
+#likeArea {
+  grid-area: likeArea;
+  background: white;
+  height: auto;
+  padding: 0.1em 1em;
+  margin: 30px;
+  border-radius: 20px;
+}
+
+#likeArea p {
+  border: double 5px #5f5951;
+  width:100px;
+  color: orange;
+}
