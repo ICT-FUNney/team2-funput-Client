@@ -13,6 +13,7 @@ const Home = () => {
                 </div>
                 <div id='workArea'><ViewWorks /></div>
             </div>
+            <WorkDetail />
         </div>
     )
 }

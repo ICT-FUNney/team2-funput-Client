@@ -1,0 +1,27 @@
+#wd-container{
+  display: inline-block;
+  background: green;
+  width: 1080px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+}
+
+#wdm-container{
+  text-align: center;
+}
+
+#wdm-img{
+  width: 610px;
+  height: 460px;
+  margin-top: 60px;
+}
+
+#wdm-title{
+  padding-top: 10px;
+}
+
+#wdm-description{
+  display: inline-block;
+  padding-top: 10px;
+  width: 800px;
+}
