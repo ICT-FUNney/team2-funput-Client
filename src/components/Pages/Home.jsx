@@ -2,6 +2,7 @@ import React from 'react';
 import '../../styles/Pages/Home.css';
 import Profile from '../Areas/Profile';
 import ViewWorks from '../Areas/ViewWorks';
+import WorkDetail from '../Areas/WorkDetail';
 
 const Home = () => {
     return (
