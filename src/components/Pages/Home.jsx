@@ -2,7 +2,6 @@ import React from 'react';
 import '../../styles/Pages/Home.css';
 import UserInfo from '../Areas/UserInfo';
 import ViewWorks from '../Areas/ViewWorks';
-import WorkDetail from '../Areas/WorkDetail';
 
 const Home = () => {
     return (
@@ -13,7 +12,6 @@ const Home = () => {
                 </div>
                 <div id='workArea'><ViewWorks /></div>
             </div>
-            <WorkDetail />
         </div>
     )
 }
