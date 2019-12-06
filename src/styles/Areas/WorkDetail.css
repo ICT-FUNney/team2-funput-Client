@@ -1,0 +1,102 @@
+#wd-container{
+  display: inline-block;
+  background: white;
+  width: 800px;
+  margin: 15px 0 100px 30px;
+  border-radius: 20px;
+  padding: 10px 50px 70px;
+}
+
+#wdm-container{
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-rows: 600px 1fr;
+  grid-auto-columns: 90% 1fr;
+}
+
+#wdm-img{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: auto;
+  width: 610px;
+  height: 500px;
+  margin-top: 60px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.fa-heart{
+  margin: 0;
+}
+
+#wdm-icons{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+#wdm-icons>i{
+  font-size: 50px;
+}
+
+#wdm-explain{
+  background: white;
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+#wdm-title{
+  text-align: center;
+  padding-top: 10px;
+}
+
+#wdm-description{
+  padding-top: 10px;
+  width: 800px;
+}
+
+
+
+.wd-title {
+  font-size: 25px;
+  padding: 25px 0 0px 10px;
+}
+
+.wd-box .wd-user-info{
+  display: flex;
+  align-items: center;
+}
+
+.wd-box .wd-user-info img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: skyblue;
+  border: 1px solid black;
+}
+
+.wd-box .wd-user-info .wd-userName{
+  display: inline-block;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+#wdc-container, #wdq-container{
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.wd-box{
+  margin:10px 0 0 30px;
+  padding: 10px 10px 0;
+  border-radius: 20px;
+  background: whitesmoke;
+}
+
+.wd-comment{
+  padding:10px 0px 40px 30px;
+}
