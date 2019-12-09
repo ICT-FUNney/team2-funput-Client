@@ -2,9 +2,8 @@ import React from 'react';
 import Icon from '../Elements/Icon';
 import '../../styles/Areas/Profile.css';
 import Button from '../Elements/Button';
-import Work from '../Elements/Work';
 import { useSelector } from 'react-redux';
-
+import gray from '../..//image/gray.jpg'
     const Profile = () => {
     const works = useSelector(state => state.works);
     return (
@@ -18,15 +17,15 @@ import { useSelector } from 'react-redux';
                 <span className='profileTitle'>今までの作品</span>
               </div>
           <div id='MyWork'>
-            <div className='MyWorks-Works'>
-        {
-          Object.keys(works).length ? Object.keys(works.b1018001.uploads).map((key, index) => {
-            return <Work userName="hoge" index={index} description={works.b1018001.uploads[key].description} url={works.b1018001.uploads[key].file_url} key={index} />
-          }) :<div>false</div>
-    }
+          <div className='MyWorkArea'>
+            <div className='imageArea'>
+            <div class="square1"></div>
+            <div class="square2"></div>
+            <div class="square3"></div>
+            <div class="square4"></div>
       </div>
-      </div>
-                
+    </div>
+                </div>
 
         </div>
     )
