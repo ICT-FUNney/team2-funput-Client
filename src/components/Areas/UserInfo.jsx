@@ -7,7 +7,6 @@ const UserInfo = () => {
     return (
         <div>
             <Icon />
-            <Button />
             <span className='userInfoTitle'>自己紹介</span>
             <span className='userInfoTitle'>今までの作品</span>
         </div>

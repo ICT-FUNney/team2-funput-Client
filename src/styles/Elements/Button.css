@@ -1,0 +1,10 @@
+button{
+    background-color: dodgerblue;
+    font-weight: bold;
+    position: relative;
+    color: white;
+    margin: auto;
+    border-radius: 20px;
+    width: 8vw;
+    height: 5vh;
+}
