@@ -18,22 +18,23 @@
 
   
 .uploadContainerOnDrag {
-    width: 15vw;
+    width: 20vw;
     height: 10vh;
     margin: auto;
     text-align: center;
     border-radius: 20px;
     background-color: palegreen;
+    border-style: dotted;
     font-weight: bold;
     position: relative;
   }
   
   .uploadContainer {
-    width: 15vw;
+    width: 20vw;
     height: 10vh;
     margin: auto;
     border-radius: 20px;
-    background-color: dodgerblue;
+    border-style: dotted;
     font-weight: bold;
     position: relative;
 
@@ -46,5 +47,5 @@
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     text-align: center;
-    color: white;
+    color: black;
   }
