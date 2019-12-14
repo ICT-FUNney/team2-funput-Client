@@ -3,7 +3,6 @@ import Icon from '../Elements/Icon';
 import '../../styles/Areas/Profile.css';
 import Button from '../Elements/Button';
 import { useSelector } from 'react-redux';
-import gray from '../..//image/gray.jpg'
     const Profile = () => {
     const works = useSelector(state => state.works);
     return (
