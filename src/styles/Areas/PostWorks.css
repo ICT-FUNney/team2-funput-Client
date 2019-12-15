@@ -1,0 +1,21 @@
+#postWorksContainer {
+  display: grid;
+  grid-template-rows: 250px 1fr;
+  grid-template-areas: 
+  " uploadArea"
+  " formArea";
+}
+
+
+#uploadArea {
+  grid-area: uploadArea;
+  width: 68%;
+  margin: 5px;
+}
+
+#formArea {
+  grid-area: formArea;
+  width: 68%;
+  height: 80%;
+  margin: 5px;
+}
