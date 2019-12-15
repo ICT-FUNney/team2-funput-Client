@@ -1,4 +1,21 @@
+#workDetailContainer {
+	display: grid;
+	grid-template-columns: 950px 1fr;
+	grid-template-areas: 
+	  "wd-container profileArea";
+  }
+  
+  #profileArea {
+	grid-area: profileArea;
+	background: white;
+	height: 70%;
+	padding: 0.5em 1em;
+	margin: 30px;
+	border-radius: 20px;
+  }
+
 #wd-container{
+  grid-area: wd-container;
   display: inline-block;
   background: white;
   width: 800px;

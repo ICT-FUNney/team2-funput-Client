@@ -1,3 +1,32 @@
+
+
+#workDetailContainer {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 950px 1fr;
+	grid-template-areas: 
+	  "wd-container profileArea";
+  }
+  
+  #wd-container{
+	grid-area: wd-container;
+	background: white;
+	height: 80%;
+	padding: 0.5em 1em;
+	margin: 30px;
+	border-radius: 20px;
+  }
+  
+  #profileArea {
+	grid-area: profileArea;
+	background: white;
+	height: 70%;
+	padding: 0.5em 1em;
+	margin: 30px;
+	border-radius: 20px;
+  }
+
+
 .title {
 	position: relative;
 
