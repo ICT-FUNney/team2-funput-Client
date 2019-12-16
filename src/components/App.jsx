@@ -16,11 +16,10 @@ const App = () => {
   });
   return (
     <div id="container">
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Header />
         <Main />
-      </BrowserRouter> */}
-      <SignIn />
+      </BrowserRouter>
     </div>
   )
 }
