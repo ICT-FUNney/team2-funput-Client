@@ -1,13 +1,13 @@
 #formWorkData{
     display: inline-block;
-  
+    position: relative;
+    left: 150px;
   }
   
   .container{
     padding: 5px;
     margin: 5px;
     background: rgb(245, 245, 245);
-    
   }
   .container form{
     display: grid;
