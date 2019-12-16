@@ -1,6 +1,6 @@
 import React  from 'react'
 import '../../styles/Areas/WorkDetail.css'
-
+import Profile from './Profile'
 const WorkDetail = (props) => {
   const {userName, title, description , url} = props;
   const fake = {
@@ -29,7 +29,10 @@ const WorkDetail = (props) => {
     name : "ユーザーネームだよ",
     comment:"コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。"
   }
-  return (
+  return (  
+     <div id="workDetailContainer">
+
+    <div id = "profileArea-work"><Profile/></div>
     <div id="wd-container">
       <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"></link>
       <div id = "wdm-container">
@@ -71,6 +74,7 @@ const WorkDetail = (props) => {
           <div className="wd-comment">{userInfo2.comment}</div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
