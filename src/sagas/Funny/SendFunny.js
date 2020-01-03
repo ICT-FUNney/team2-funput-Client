@@ -1,6 +1,6 @@
 import { call, put } from '@redux-saga/core/effects';
 import { SendFunny } from "../../apis/Funny/SendFunny";
-import { sendFunnySuccess, sendFunnyFailed } from "../../actions/Funny/ActionCreator";
+import { sendFunnySuccess, sendFunnyFailed, getFunnyRequest } from "../../actions/Funny/ActionCreator";
 import { updateToken } from "../../actions/LoginUser/ActionCreator";
 
 export function* sendFunnySaga(action) {
@@ -12,6 +12,13 @@ export function* sendFunnySaga(action) {
     const token = response.headers.authorization;
     yield put(sendFunnySuccess());
     yield put(updateToken(token));
+    console.log();
+    const data = {
+      id: action.data.source_id,
+      password:''
+    }
+    console.log(data);
+    yield put(getFunnyRequest(data, token));
   } else {
     yield put(sendFunnyFailed());
   }
