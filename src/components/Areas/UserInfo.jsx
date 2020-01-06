@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 
 const UserInfo = () => {
-    const Funny = useSelector(state => state.users.balance)
+    const Funny = useSelector(state => state.funny.funney)
     return (
         <div>
             <Icon />
