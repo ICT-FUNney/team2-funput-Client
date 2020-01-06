@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { postWorksDataRequest } from '../../actions/Works/ActionCreator';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import '../../styles/Elements/FormWorkData.css'
 
 
 const FormWorkData = () => {
   const dispatch = useDispatch();
+  const loginUser = useSelector(state => state.loginUser);
   const [workPostTitle, setworkPostTitle] = useState('');
   const onWorkPostTitleChange = (e) => {
     setworkPostTitle(e.currentTarget.value);
@@ -20,7 +21,7 @@ const FormWorkData = () => {
       return;
     }
     const worksData = [workPostTitle, "file_url", workPostComment];
-    dispatch(postWorksDataRequest(worksData));
+    dispatch(postWorksDataRequest(worksData,loginUser));
     setworkPostTitle("");
     setworkPostComment("");
   }
