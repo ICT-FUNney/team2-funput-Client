@@ -1,14 +1,18 @@
 import React from 'react';
 import Icon from '../Elements/Icon';
 import '../../styles/Areas/UserInfo.css';
-import Button from '../Elements/Button';
+
 
 const UserInfo = () => {
     return (
         <div>
             <Icon />
-            <span className='userInfoTitle'>自己紹介</span>
-            <span className='userInfoTitle'>今までの作品</span>
+            <p>フォロー</p>
+            <p>フォロワー</p>
+            <p>Funny残高</p>
+            <p className='funny'>Funny</p>
+            <p>質問履歴</p>
+            <p>コメント履歴</p>
         </div>
     )
 }
