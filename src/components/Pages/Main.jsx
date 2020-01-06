@@ -5,6 +5,8 @@ import Home from './Home';
 import Like from './Like';
 import Post from './Post';
 import WorkDetail from '../Areas/WorkDetail';
+import Signin from './SignIn';
+import Transaction from './Transaction';
 import { getWorksRequest } from '../../actions/Works/ActionCreator';
 
 const Main = () => {
@@ -23,6 +25,8 @@ const Main = () => {
       {Object.keys(works).length && Object.keys(works.b1018001.uploads).map((key, index) => {
         return <Route key={index} path={"/home/detail" + index} render={() => <WorkDetail index={index} />} />
       })}
+      <Signin />
+      <Transaction />
     </div>
   )
 }
