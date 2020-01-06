@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Icon from '../Elements/Icon';
 import '../../styles/Areas/UserInfo.css';
-import Button from '../Elements/Button';
+import { useSelector } from 'react-redux';
+
 
 const UserInfo = () => {
+    const Funny = useSelector(state => state.funny.funney)
     return (
         <div>
             <Icon />
-            <span className='userInfoTitle'>自己紹介</span>
-            <span className='userInfoTitle'>今までの作品</span>
+            <p>フォロー</p>
+            <p>フォロワー</p>
+            <hr/>
+            <p>Funny残高</p>
+            <p className='funny'>{Funny} Funny</p>
+            <hr/>
+            <p>質問履歴</p>
+            <p>コメント履歴</p>
         </div>
     )
 }
