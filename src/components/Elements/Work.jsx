@@ -3,12 +3,19 @@ import '../../styles/Elements/Work.css';
 import { useHistory } from 'react-router-dom';
 
 const Work = (props) => {
-  const { userName, description, url, index } = props;
+  const { userName, description, url, index , path} = props;
 
   const history = useHistory();
 
   const handleClick = () => {
-    history.push('/home/detail' + index);
+    console.log(path);
+    history.push({
+      pathname:'/detail',
+      state:{
+        url:url,
+        path:path
+      }
+    });
   };
 
   return (

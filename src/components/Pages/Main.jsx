@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Route } from 'react-router-dom';
+import { Route ,Switch} from 'react-router-dom';
 import Home from './Home';
 import Like from './Like';
 import Post from './Post';
@@ -20,13 +20,21 @@ const Main = () => {
 
   return (
     <div id='main'>{/*各urlにて表示させるcomponentを設定する*/}
-      <Route exact path='/home' component={Home} />
-      <Route path='/like' component={Like} />
-      <Route path='/post' component={Post} />
-      <Route path = '/background' component = {Background}/>
-      {Object.keys(works).length && Object.keys(works.b1018001.uploads).map((key, index) => {
-        return <Route key={index} path={"/home/detail" + index} render={() => <WorkDetail index={index} />} />
-      })}
+      <Switch>
+      {console.log("main::in")}
+
+        <Route exact path='/home' component={Home} />
+        <Route path='/like' component={Like} />
+        <Route path='/post' component={Post} />
+        <Route path = '/background' component = {Background}/>
+        {/*// <Route key={index} path={"/home/detail" + index} render={() => <WorkDetail index={index} contents = {contents} />*/}
+          <Route path = "/detail/" component={WorkDetail} />
+          {console.log("main:::::out")}
+          {/*// {Object.keys(works).length && Object.keys(works.b1018001.uploads).map((contents, index) => {
+            //   console.log(works.b1018001.uploads[contents]);
+            //   return <Route key={index} path={"/home/detail" + index} render={() => <WorkDetail index={index} contents = {contents} />} />
+            // })}*/}
+      </Switch>
     </div>
   )
 }

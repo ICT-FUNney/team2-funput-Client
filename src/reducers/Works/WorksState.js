@@ -14,7 +14,6 @@ const WorksState = (state = initialState, action) => {
         ...action.works
       }
     case POST_WORKS_DATA_SUCCESS:
-      console.log(action.worksData);
       return {
         ...action.worksData
       }

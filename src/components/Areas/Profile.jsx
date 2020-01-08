@@ -19,10 +19,10 @@ import gray from '../..//image/gray.jpg'
           <div id='MyWork'>
           <div className='MyWorkArea'>
             <div className='imageArea'>
-            <div class="square1"></div>
-            <div class="square2"></div>
-            <div class="square3"></div>
-            <div class="square4"></div>
+            <div className="square1"></div>
+            <div className="square2"></div>
+            <div className="square3"></div>
+            <div className="square4"></div>
       </div>
     </div>
                 </div>
