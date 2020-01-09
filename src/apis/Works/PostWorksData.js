@@ -1,7 +1,6 @@
 import Axios from "../Axios";
 
 export async function postWorksData(works) {
-  console.log(works);
   const dayData = new Date();
   const year = dayData.getFullYear();
   const month = dayData.getMonth();

@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 export async function SendFunny(data, token) {
-  console.log(data.source_id,data.send_id,parseInt(data.balance), token);
   try {
     return await axios.post(`https://funfintech.tk/api/v2/transaction`, {
       id: data.source_id, dest_id: data.send_id, amount: parseInt(data.balance)

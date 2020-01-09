@@ -3,10 +3,10 @@ import Dropzone from 'react-dropzone'
 import '../../styles/Elements/DropZone.css'
 
 const DropZone = () => {
-  const [value, setValue] = useState([]);
+  // const [value, setValue] = useState([]);
   const [URLs, setURLs] = useState([]);
 
-  const onDrop = (acceptedFiles) => {//画像ドロップ 
+  const onDrop = (acceptedFiles) => {//画像ドロップ
     const newURLs = [...URLs]//スプレッド構文で、新しい配列を作成
     let url = ''
 
@@ -17,7 +17,7 @@ const DropZone = () => {
     console.log(acceptedFiles);
     console.log(newURLs);
 
-    setValue(acceptedFiles);
+    // setValue(acceptedFiles);
     setURLs(newURLs);
   }
 

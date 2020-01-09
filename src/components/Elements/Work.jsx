@@ -3,12 +3,11 @@ import '../../styles/Elements/Work.css';
 import { useHistory } from 'react-router-dom';
 
 const Work = (props) => {
-  const { userName, description, url, index , path} = props;
+  const { userName, work_title, url, path} = props;
 
   const history = useHistory();
 
   const handleClick = () => {
-    console.log(path);
     history.push({
       pathname:'/detail',
       state:{
@@ -24,7 +23,7 @@ const Work = (props) => {
         <img src={url} alt={url} />
       </div>
       <div className="description" >
-        {description}
+        {work_title}
       </div>
       <div className="userName">{userName}</div>
     </div>

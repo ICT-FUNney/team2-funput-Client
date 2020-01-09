@@ -6,20 +6,11 @@ import Profile from './Profile'
 import { useLocation } from 'react-router-dom';
 
 const WorkDetail = (props) => {
-  // const {contents} = props;
-  // console.log(contents);
   const location = useLocation();
   const dispatch = useDispatch();
-  console.log(location.state.path);
   useEffect(() => {
     dispatch(getContentRequest(location.state.path))
-  },[])
-  console.log("WorkDetail:::::out");
-  const fake = {
-    title: "タイトル名",
-    url: "https://firebasestorage.googleapis.com/v0/b/takashi-s-works-uploads.appspot.com/o/images%2FThe%20Girl%20of%20the%20nightjpg.jpg?alt=media&amp;token=4655abd4-94bb-414e-9c01-3f8be485b283",
-    description: "これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。これは説明文です。"
-  }
+  },[location,dispatch]);
 
   const userInfo = {
     user:{
@@ -42,7 +33,6 @@ const WorkDetail = (props) => {
     comment:"コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。"
   }
   const content = useSelector(state => state.contnet);
-  console.log(content);
   return (
      <div id="workDetailContainer">
 
@@ -65,14 +55,14 @@ const WorkDetail = (props) => {
         <div className = "wd-title">コメント</div>
         <div className = "wd-box">
           <div className = "wd-user-info">
-            <img src = {userInfo.user.b2018034.icon}/>
+            <img src = {userInfo.user.b2018034.icon} alt = {userInfo.user.b2018034.icon}/>
             <div className = "wd-userName">{userInfo.user.b2018034.name}</div>
           </div>
           <div className="wd-comment">{userInfo.user.b2018034.comment}</div>
         </div>
         <div className = "wd-box">
           <div className = "wd-user-info">
-            <img src = {userInfo.user.b2018009.icon}/>
+            <img src = {userInfo.user.b2018009.icon} alt={userInfo.user.b2018009.icon}/>
             <div className = "wd-userName">{userInfo.user.b2018009.name}</div>
           </div>
           <div className="wd-comment">{userInfo.user.b2018009.comment}</div>
@@ -82,7 +72,7 @@ const WorkDetail = (props) => {
         <div className = "wd-title">質問</div>
         <div className = "wd-box">
           <div className = "wd-user-info">
-            <img src = {userInfo2.icon}/>
+            <img src = {userInfo2.icon} alt = {userInfo2.icon}/>
             <div className = "wd-userName">{userInfo2.name}</div>
           </div>
           <div className="wd-comment">{userInfo2.comment}</div>

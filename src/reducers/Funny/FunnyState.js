@@ -8,7 +8,6 @@ const initState = {
 export default function funneyState(state = initState, action) {
   switch (action.type) {
     case GET_FUNNY_SUCCESS:
-      console.log(action.data);
       return {
         ...state,
         funney: action.data.balance,

@@ -5,14 +5,13 @@ import '../styles/App.css';
 import Main from './Pages/Main';
 import { BrowserRouter } from 'react-router-dom'
 import { getUsersRequest } from '../actions/Users/ActionCreator';
-import { getWorksRequest } from '../actions/Works/ActionCreator';
-import SignIn from './Pages/SignIn';
+// import { getWorksRequest } from '../actions/Works/ActionCreator';
 
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getUsersRequest());
-    dispatch(getWorksRequest());
+    // dispatch(getWorksRequest());
   });
   return (
     <div id="container">

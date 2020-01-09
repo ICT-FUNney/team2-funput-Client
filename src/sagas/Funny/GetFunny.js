@@ -6,7 +6,6 @@ import { getFunny } from '../../apis/Funny/GetFunny';
 export function* getFunnySaga(action) {
   const response = yield call(getFunny, action.data.id, action.token);
   if (response.status === 202) {
-    console.log(response);
     const token = response.headers.authorization;
     const data = response.data;
     yield put(getFunnySuccess(data));
