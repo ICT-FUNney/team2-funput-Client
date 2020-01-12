@@ -15,7 +15,8 @@ export async function postWorksData(works) {
       ["" + dayInf]: {
         work_title: works.work_title,
         file_url: works.file_url,
-        description: works.description
+        description: works.description,
+        user_id:works.user_id
       }
     };
     ref.data.b1018001.uploads = Object.assign({}, ref.data.b1018001.uploads, ref2);

@@ -7,7 +7,8 @@ export function* postWorksDataSaga(worksData, loginUser) {
   const work_title = worksData.worksData[0];
   const file_url = worksData.worksData[1];
   const description = worksData.worksData[2];
-  const response = yield call(postWorksData,{work_title,file_url,description});
+  const user_id = worksData.worksData[3];
+  const response = yield call(postWorksData,{work_title,file_url,description, user_id});
   if (response.status === 201 && response.data) {
     yield put(postWorksDataSuccess(response.data));
     const data = {

@@ -12,7 +12,7 @@ const ViewWorks = () => {
       <div className="ViewWorks-Works">
         {
           Object.keys(works).length ? Object.keys(works.b1018001.uploads).map((key, index) => {
-            return <Work userName="hoge" index={index} work_title={works.b1018001.uploads[key].work_title} url={works.b1018001.uploads[key].file_url} key={index} path = {key}/>
+            return <Work userName={works.b1018001.uploads[key].user_id} index={index} work_title={works.b1018001.uploads[key].work_title} url={works.b1018001.uploads[key].file_url} key={index} path = {key}/>
           }) : <div>false</div>
         }
       </div>
