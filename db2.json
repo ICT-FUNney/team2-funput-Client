@@ -1,0 +1,197 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "json-server",
+        "author": "typicode"
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+      }
+    ],
+    "profile": {
+      "name": "typicode"
+    },
+    "users": {
+      "b1018001": {
+        "number": "b1018001",
+        "name": "テスト太郎"
+      },
+      "b1018002": {
+        "number": "b1018002",
+        "name": "佐藤太郎"
+      }
+    },
+    "works": {
+      "b1018001": {
+        "number": "b1018001",
+        "uploads": {
+          "20191104": {
+            "work_title": "react todoアプリ画面",
+            "file_url": "ここにstorageに保存した際に生成されるurlの文字列が入る",
+            "description": "reactでtodoアプリ作ってみました! ここレビューして欲しいです!",
+            "comments": [
+              {
+                "usename": "hoge",
+                "comment": "s"
+              }
+            ]
+          },
+          "20191205": {
+            "work_title": "typescript clean architecture",
+            "file_url": "https://photos.google.com/photo/AF1QipNDAgjpk0PMfrQDDSdczg8kKwtfksxauK0lx0dp",
+            "description": "Funny"
+          },
+          "20191015131255": {
+            "work_title": "ggslkfgsdf",
+            "file_url": "file_url",
+            "description": "kkdfsfddfg"
+          },
+          "2019101815025": {
+            "work_title": "タイトル",
+            "file_url": "https://pbs.twimg.com/media/D9Bx40QUEAcIKVf?format=jpg&name=4096x4096",
+            "description": "コメント"
+          },
+          "201910181568": {
+            "work_title": "タイトル２",
+            "file_url": "file_url",
+            "description": "コメントだよー"
+          },
+          "20191018154222": {
+            "work_title": "ｄｆｓｇｓｄｆ",
+            "file_url": "https://i.pximg.net/img-master/img/2018/05/04/17/10/17/68571067_p0_master1200.jpg",
+            "description": "ｚｄｆｇｓ"
+          },
+          "2019101815596": {
+            "work_title": "hoho",
+            "file_url": "https://firebasestorage.googleapis.com/v0/b/takashi-s-works-uploads.appspot.com/o/images%2FThe%20Girl%20of%20the%20nightjpg.jpg?alt=media&amp;token=4655abd4-94bb-414e-9c01-3f8be485b283",
+            "description": "hihih"
+          },
+          "20200222186": {
+            "work_title": "ggfg",
+            "file_url": "file_url",
+            "description": "dsgsdffgsdgff"
+          },
+          "20200222208": {
+            "work_title": "dasf",
+            "file_url": "file_url",
+            "description": "sadfas"
+          },
+          "202002222046": {
+            "work_title": "klh",
+            "file_url": "file_url",
+            "description": "khlhl"
+          },
+          "202002222215": {
+            "work_title": "dfs",
+            "file_url": "file_url",
+            "description": "dfgsdf"
+          },
+          "202002222610": {
+            "work_title": "dsgfs",
+            "file_url": "file_url",
+            "description": "sgf"
+          },
+          "20200222305": {
+            "work_title": "dfsdf",
+            "file_url": "file_url",
+            "description": "dfgsdfgsdf"
+          },
+          "202002223339": {
+            "work_title": "dds",
+            "file_url": "file_url",
+            "description": "dadf"
+          },
+          "20200222422": {
+            "work_title": "ewrrwee",
+            "file_url": "file_url",
+            "description": "rwerwertwe"
+          },
+          "20200222439": {
+            "work_title": "pos",
+            "file_url": "file_url",
+            "description": "dsfsgdfsdf"
+          },
+          "202002224351": {
+            "work_title": "vasdsa",
+            "file_url": "file_url",
+            "description": "shasbdjhbasd"
+          },
+          "202002224612": {
+            "work_title": "safds",
+            "file_url": "file_url",
+            "description": "srgstdft"
+          },
+          "202002225325": {
+            "work_title": "dfsdfg",
+            "file_url": "file_url",
+            "description": "sdfgsdgfdsgfg"
+          },
+          "20200223645": {
+            "work_title": "ttssg",
+            "file_url": "file_url",
+            "description": "sdgfsdgd"
+          },
+          "20200223930": {
+            "work_title": "gahdk",
+            "file_url": "file_url",
+            "description": "bjkdfsdf"
+          },
+          "202002231258": {
+            "work_title": "fdsfg",
+            "file_url": "file_url",
+            "description": "dfgsdg"
+          },
+          "202002232638": {
+            "work_title": "fdfsd",
+            "file_url": "file_url",
+            "description": "dfgsdgds"
+          },
+          "20200223472": {
+            "work_title": "dfgs",
+            "file_url": "file_url",
+            "description": "gsdgsdfg"
+          },
+          "202002234817": {
+            "work_title": "fdsgsd",
+            "file_url": "file_url",
+            "description": "dsfg"
+          },
+          "20200223525": {
+            "work_title": "gsdf",
+            "file_url": "file_url",
+            "description": "dfgsdg"
+          },
+          "202002235425": {
+            "work_title": "dfsdf",
+            "file_url": "file_url",
+            "description": "dfgsdgf"
+          },
+          "20200615849": {
+            "work_title": "sdv",
+            "file_url": "file_url",
+            "description": "ｄさふぁｓｄｖ"
+          },
+          "20200615920": {
+            "work_title": "dsdsdasfass",
+            "file_url": "file_url",
+            "description": "dsafasdf"
+          },
+          "202006152424": {
+            "work_title": "tesasd",
+            "file_url": "file_url",
+            "description": "sddfbakndf"
+          },
+          "202006155653": {
+            "work_title": "tddsafd",
+            "file_url": "file_url",
+            "description": "jahdfas"
+          }
+        }
+      }
+    }
+  }
