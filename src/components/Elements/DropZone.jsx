@@ -1,16 +1,16 @@
-import React, { useState, /*useCallback */ } from 'react'
-import { useDispatch } from 'react-redux'
+import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import Dropzone from 'react-dropzone'
 import '../../styles/Elements/DropZone.css'
-import { getContentSuccess } from '../../actions/Content/ActionCreator'
+import { postContent, setUrlContent } from '../../actions/Content/ActionCreator'
+
 
 const DropZone = () => {
-  // const [value, setValue] = useState([]);
-  const [URLs, setURLs] = useState([]);
   const dispatch = useDispatch();
+  const URLs = useSelector(state => state.contnet.url);
 
   const onDrop = (acceptedFiles) => {//画像ドロップ
-    const newURLs = [...URLs]//スプレッド構文で、新しい配列を作成
+    var newURLs = [...URLs]//スプレッド構文で、新しい配列を作成
     let url = ''
     var file ={
       data : acceptedFiles
@@ -18,9 +18,9 @@ const DropZone = () => {
     acceptedFiles.forEach(acceptedFile => {
       url = URL.createObjectURL(acceptedFile)
       newURLs.push(url)//配列の末尾に urlの要素を追加
-      dispatch(getContentSuccess(file));
+      dispatch(postContent(file));
     })
-    setURLs(newURLs);
+    dispatch(setUrlContent(newURLs));
   }
 
   return (

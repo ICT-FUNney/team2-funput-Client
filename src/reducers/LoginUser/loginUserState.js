@@ -22,8 +22,6 @@ export default function loginUserState(state = initState, action) {
       sendUserData(action.data.id, action.token);
       const getId = sessionStorage.getItem('id');
       const getToken = sessionStorage.getItem('token');
-      console.log(getId);
-      console.log(getToken);
       return {
         ...state,
         id: action.data.id,

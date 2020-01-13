@@ -9,7 +9,7 @@ const util = require('util')
 const FormWorkData = () => {
   const dispatch = useDispatch();
   const loginUser = useSelector(state => state.loginUser);
-  const files = useSelector(state => state.contnet);
+  const files = useSelector(state => state.contnet.file);
   var blob;
 
   async function uploads (){
@@ -41,9 +41,11 @@ const FormWorkData = () => {
     const worksData = [workPostTitle, url , workPostComment, loginUser.id];
     dispatch(postWorksDataRequest(worksData,loginUser))
   })
+
   async function actionfun() {
-    var x = await uploads();
-    await dis(x);
+    await uploads().then(url => {
+      dis(url)
+    })
   }
 
   const handleClickSubmitt = function (e) {

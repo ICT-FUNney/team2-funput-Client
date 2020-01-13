@@ -1,6 +1,7 @@
 import {postWorksData} from "../../apis/Works/PostWorksData";
 import { call, put } from 'redux-saga/effects';
 import { postWorksDataSuccess, postWorksDataFailed } from "../../actions/Works/ActionCreator";
+import { resetContent } from '../../actions/Content/ActionCreator';
 import { sendFunnyRequest } from '../../actions/Funny/ActionCreator';
 
 export function* postWorksDataSaga(worksData, loginUser) {
@@ -18,6 +19,7 @@ export function* postWorksDataSaga(worksData, loginUser) {
       }
     const token = worksData.loginUser.token;
     yield put(sendFunnyRequest(data, token));
+    yield put(resetContent());
   } else if (response.status === 400) {
     yield put(postWorksDataFailed());
   } else {
