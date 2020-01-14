@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Icon from '../Elements/Icon';
 import '../../styles/Areas/UserInfo.css';
 import { useSelector, useDispatch } from 'react-redux';
@@ -8,16 +8,14 @@ import { getFunnyRequest } from '../../actions/Funny/ActionCreator';
 const UserInfo = () => {
     const dispatch = useDispatch();
     const id =useSelector(state=> state.loginUser.id)
-    const token = useSelector(state => state.loginUser.token) 
-    console.log(id);
-    console.log(token);
+    const token = useSelector(state => state.loginUser.token)
     const data = {
         id,
         password:''
     }
     useEffect(() => {
-        dispatch(getFunnyRequest(data,token))
-    })
+        dispatch(getFunnyRequest(data,token));
+    },[])
     const Funny = useSelector(state => state.funny.funney)
     return (
         <div>
