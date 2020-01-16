@@ -15,7 +15,7 @@ export function* postWorksDataSaga(worksData, loginUser) {
     const data = {
         source_id: worksData.loginUser.id,
         send_id: "test",
-        balance: 1
+        balance: 10
       }
     const token = worksData.loginUser.token;
     yield put(sendFunnyRequest(data, token));
