@@ -30,13 +30,7 @@
     "b1018001": {
       "number": "b1018001",
       "uploads": {
-        
-        "202001414438": {
-          "work_title": "じん",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2F%E3%81%97%E3%82%99%E3%82%93%E3%81%A1%E3%82%83%E3%82%93.png?alt=media&token=3666525f-4a13-4806-bb5b-acc792182087",
-          "description": "じんちゃん",
-          "user_id": "test2"
-        },
+  
         "202001416275": {
           "work_title": "golangホットリロード",
           "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2Fdockerfile.dev%20sample.png?alt=media&token=497aae52-a7d8-4adc-8980-0d380597c06b",
@@ -77,90 +71,6 @@
           "work_title": "はじめてのテストコード",
           "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2F%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-01-16%2013.36.42.png?alt=media&token=5fe903ca-95fe-465f-bf6a-791bc48947a7",
           "description": "テストコードを書きました。",
-          "user_id": "test2"
-        },
-        "202001321572": {
-          "work_title": "minesweeperfail",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2F%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%887.jpg?alt=media&token=734459ab-0a80-4ff2-bad2-13b1ae1afca4",
-          "description": "マインスイーパーの失敗したとき用の画面",
-          "user_id": "test2"
-        },
-        "202001322450": {
-          "work_title": "ふぁいと～",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2FGirl%20in%20the%20%20Shining%20Night%20with%20a%20Curten.png?alt=media&token=eab7ce15-3a36-4e85-8603-ebc1876a7165",
-          "description": "ftああ",
-          "user_id": "test2"
-        },
-        "2020013221614": {
-          "work_title": "💤sax",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2FGirl%20in%20the%20%20Shining%20Night%20with%20a%20Curten.png?alt=media&token=09aef74a-a043-4600-82f6-fee4bac811a9",
-          "description": "ｘｖｃｚｘｃｖ",
-          "user_id": "test2"
-        },
-        "202001322182": {
-          "work_title": "gdsfgf",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2FGirl%20in%20the%20%20Shining%20Night%20with%20a%20Curten.png?alt=media&token=08bf231e-eb12-4d6d-8017-c135815ff7cb",
-          "description": "gfsdfg",
-          "user_id": "test2"
-        },
-        "2020013222251": {
-          "work_title": "hjh",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2FIllustrators%E3%82%B5%E3%83%BC%E3%82%AF%E3%83%AB%E3%82%AB%E3%83%83%E3%83%88.jpg?alt=media&token=d325d0a4-b5ad-4a2c-a240-68a8b3043a54",
-          "description": "kjkj",
-          "user_id": "test2"
-        },
-        "2020013222340": {
-          "work_title": "asdf",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2FIllustrators%E3%82%B5%E3%83%BC%E3%82%AF%E3%83%AB%E3%82%AB%E3%83%83%E3%83%88.jpg?alt=media&token=1706651c-e34c-4b1b-a687-8bd097f99b60",
-          "description": "dsaf",
-          "user_id": "test2"
-        },
-        "2020013222848": {
-          "work_title": "dsf",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2FIllustrators%E3%82%B5%E3%83%BC%E3%82%AF%E3%83%AB%E3%82%AB%E3%83%83%E3%83%88.jpg?alt=media&token=1fe26dee-caee-435a-a633-a66b56249f54",
-          "description": "sdf",
-          "user_id": "test2"
-        },
-        "2020013223259": {
-          "work_title": "dfs",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2Fyuruguya.jpg?alt=media&token=1a1f17e6-48d9-411b-a7ff-d5c9111f0d62",
-          "description": "asfa",
-          "user_id": "test2"
-        },
-        "202001405313": {
-          "work_title": "dzfz",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2Fface.png?alt=media&token=130351a7-1291-4cd5-a669-207d1bdfad24",
-          "description": "zbvzcvb",
-          "user_id": "test2"
-        },
-        "20200140554": {
-          "work_title": "cute",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2Fmasukotto.png?alt=media&token=cda146a3-947f-4641-a298-fec8a5e84d79",
-          "description": "mascotto",
-          "user_id": "test2"
-        },
-        "202001405527": {
-          "work_title": "way",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2Fmasukotto2.png?alt=media&token=5c419bf7-4b91-49a6-b341-f340d9e2b9dc",
-          "description": "wwwww",
-          "user_id": "test2"
-        },
-        "20200141720": {
-          "work_title": "sdfsa",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2Ffavicon.ico?alt=media&token=3913d42a-ca49-44de-aeb4-3ac8511f23bd",
-          "description": "fas",
-          "user_id": "test2"
-        },
-        "20200141748": {
-          "work_title": "dsaf",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2Fmasukotto.png?alt=media&token=1357d3fe-e8c8-4a19-93c7-7afbdc5f4ab1",
-          "description": "sadfa",
-          "user_id": "test2"
-        },
-        "20200141814": {
-          "work_title": "dfsad",
-          "file_url": "https://firebasestorage.googleapis.com/v0/b/fakestrage-6c366.appspot.com/o/images%2F%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88.png?alt=media&token=afd65e15-65bd-4239-a43e-b08be220c00c",
-          "description": "asdfa",
           "user_id": "test2"
         }
       }
