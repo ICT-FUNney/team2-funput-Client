@@ -16,7 +16,7 @@ import sample4 from '../../image/FUNneyLogo.png';
            <div id = 'profile'>
                <span className='profileTitle'>自己紹介</span>
               <div className='selfIntroduction'>
-                 <p> 知能システムコース学部2年生です。
+                 <p> 知能システムコース学部2年です。
               フロントエンドに興味があります！ </p>
               </div>
             </div>
