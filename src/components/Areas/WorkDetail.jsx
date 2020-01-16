@@ -17,12 +17,12 @@ const WorkDetail = (props) => {
       b2018034:{
         icon : "https://firebasestorage.googleapis.com/v0/b/takashi-s-works-uploads.appspot.com/o/images%2Fface.jpg?alt=media&token=8247b8f6-7239-4285-932f-04f03284ce7d",
         name : "ユーザーネームだよ",
-        comment:"コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。"
+        comment:"いいね。"
       },
       b2018009:{
         icon : "https://firebasestorage.googleapis.com/v0/b/takashi-s-works-uploads.appspot.com/o/images%2Fface.jpg?alt=media&token=8247b8f6-7239-4285-932f-04f03284ce7d",
         name : "userNameだよ",
-        comment:"コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。"
+        comment:"ありがとう！"
       }
     }
 
@@ -30,7 +30,7 @@ const WorkDetail = (props) => {
   const userInfo2 = {
     icon : "https://firebasestorage.googleapis.com/v0/b/takashi-s-works-uploads.appspot.com/o/images%2Fface.jpg?alt=media&token=8247b8f6-7239-4285-932f-04f03284ce7d",
     name : "ユーザーネームだよ",
-    comment:"コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。"
+    comment:"これはなんですか？"
   }
   const content = useSelector(state => state.contnet.data);
   return (
