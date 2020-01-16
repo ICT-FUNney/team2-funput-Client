@@ -14,7 +14,7 @@ export function* postWorksDataSaga(worksData, loginUser) {
     yield put(postWorksDataSuccess(response.data));
     const data = {
         source_id: worksData.loginUser.id,
-        send_id: "test",
+        send_id: "test2",
         balance: 10
       }
     const token = worksData.loginUser.token;

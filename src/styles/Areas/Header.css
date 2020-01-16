@@ -1,26 +1,53 @@
+#headerContainer{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-areas: 
+    "funnylogoArea linkArea";
+}
+
+#funnylogoArea {
+  grid-area: funnylogoArea;
+  background: white;
+  padding: 0.5em 1em;
+  
+}
+#logo {
+  width: 125px;
+  height: 125px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+#linkArea {
+  grid-area: linkArea;
+  background: white;
+  height: auto;
+  padding: 0.1em 1em;
+}
+
 .headerTitle{
 text-align: left;
 font-size: 40px;
 font-weight: bold;
 color: coral;
-margin-top: 20px;
+margin-top: 30px;
 }
 
 .fa-lg{
   position: relative;
-  margin-top: 45px;
+  margin-top: 35px;
 }
 
 .fa-file-export{
   position: relative;
-  margin-left: 20px;
-  margin-top: 45px;
+  margin-left: 10px;
+  margin-top: 35px;
 }
 
 .fa-heart{
-
-  margin-left: 20px;
-  margin-top: 45px;
+  position: relative;
+  margin-left: 50px;
+  margin-top: 35px;
  
 }
 
