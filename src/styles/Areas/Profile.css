@@ -33,6 +33,11 @@ grid-column:1/3;
   margin: 10px;
   top: 20px;
 }
+.selfIntroduction{
+  position: relative;
+  margin-left: 20px;
+  top:20px
+}
 .worksTitle {
   font-size: 50px;
   position: relative;
@@ -50,35 +55,51 @@ grid-column:1/3;
 .imageArea{
   position: relative;
 }
-
+#sample1{
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+}
 .square1 {
   width: 130px;
   height: 130px;
-  background:gainsboro;
   border-radius: 20px;
   position: absolute;
   left:190px;
   
 }
+#sample2{
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+}
 .square2 {
   width: 130px;
   height: 130px;
-  background:gainsboro;
+
+  border-radius: 20px;
+}
+#sample3{
+  width: 130px;
+  height: 130px;
   border-radius: 20px;
 }
 .square3 {
   width: 130px;
   height: 130px;
-  background:gainsboro;
   border-radius: 20px;
   position: absolute;
   left:190px;
   top:180px
 }
+#sample4{
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+}
 .square4 {
   width: 130px;
   height: 130px;
-  background:gainsboro;
   border-radius: 20px;
   position: absolute;
   top:180px
