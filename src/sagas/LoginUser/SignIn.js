@@ -5,9 +5,7 @@ import { getFunnyRequest } from '../../actions/Funny/ActionCreator';
 
 
 export function* signInSaga(action) {
-  console.log('in login saga');
   const response = yield call(signIn, action.data);
-  console.log(response.status);
   if (response.status === 202) {
     console.log(response)
     const token = response.headers.authorization;

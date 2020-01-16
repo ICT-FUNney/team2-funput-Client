@@ -32,7 +32,7 @@ const WorkDetail = (props) => {
     name : "ユーザーネームだよ",
     comment:"これはなんですか？"
   }
-  const content = useSelector(state => state.contnet);
+  const content = useSelector(state => state.contnet.data);
   return (
      <div id="workDetailContainer">
 
