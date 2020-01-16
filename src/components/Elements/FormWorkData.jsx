@@ -49,13 +49,17 @@ const FormWorkData = () => {
   }
 
   const handleClickSubmitt = function (e) {
+    //console.log("正常");
     e.preventDefault();
     if (workPostTitle === '' || workPostComment === '' || Object.keys(files).length === 0) {
+      alert("投稿完了　100FNY");
       return;
     }
     actionfun();
     setworkPostTitle("");
     setworkPostComment("");
+    alert("aaaa");
+    console.log("正常");
   }
 
   return (
