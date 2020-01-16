@@ -49,13 +49,17 @@ const FormWorkData = () => {
   }
 
   const handleClickSubmitt = function (e) {
+    //console.log("正常");
     e.preventDefault();
     if (workPostTitle === '' || workPostComment === '' || Object.keys(files).length === 0) {
+      alert("空欄を埋めてください");
       return;
     }
     actionfun();
     setworkPostTitle("");
     setworkPostComment("");
+    alert("投稿完了　10FUNney受け取りました。");
+    console.log("正常");
   }
 
   return (
