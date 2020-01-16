@@ -1,13 +1,19 @@
-.userInfoTitle {
+.p {
   font-size: 10px;
-  position: relative;
-  margin: 10px;
-  top: 20px;
 }
 
-.worksTitle {
-  font-size: 10px;
+p.funny{
   position: relative;
-  margin: 10px;
-  top: 50px;
+  left: 80px;
 }
+
+hr {
+  height: 1px;
+  border: none;
+  border-top: 1px #000000 solid;
+}
+
+
+
+
+

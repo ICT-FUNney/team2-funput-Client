@@ -1,14 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Icon from '../Elements/Icon';
 import '../../styles/Areas/UserInfo.css';
-import Button from '../Elements/Button';
+import { useSelector, useDispatch } from 'react-redux';
+import { getFunnyRequest } from '../../actions/Funny/ActionCreator';
+
 
 const UserInfo = () => {
+    const dispatch = useDispatch();
+    const id =useSelector(state=> state.loginUser.id)
+    const token = useSelector(state => state.loginUser.token)
+    const data = {
+        id,
+        password:''
+    }
+    useEffect(() => {
+        dispatch(getFunnyRequest(data,token));
+    },[])
+    const Funny = useSelector(state => state.funny.funney)
     return (
         <div>
             <Icon />
-            <span className='userInfoTitle'>自己紹介</span>
-            <span className='userInfoTitle'>今までの作品</span>
+            <p>フォロー</p>
+            <p>フォロワー</p>
+            <hr/>
+            <p>Funny残高</p>
+            <p className='funny'>{Funny} Funny</p>
+            <hr/>
+            <p>質問履歴</p>
+            <p>コメント履歴</p>
         </div>
     )
 }

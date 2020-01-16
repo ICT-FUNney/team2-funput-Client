@@ -7,7 +7,7 @@ import { GET_WORKS_REQUEST, POST_WORKS_REQUEST, POST_WORKS_DATA_REQUEST } from "
 const worksSaga = [
   takeLatest(GET_WORKS_REQUEST, getWorksSaga),
   takeLatest(POST_WORKS_REQUEST, postWorksSaga),
-  takeLatest(POST_WORKS_DATA_REQUEST, postWorksDataSaga),
+  takeLatest(POST_WORKS_DATA_REQUEST, postWorksDataSaga)
 ];
 
 export default worksSaga;

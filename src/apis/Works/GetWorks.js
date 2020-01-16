@@ -1,9 +1,9 @@
 import Axios from "../Axios";
 
-export async function getWorks(){
-  try{
+export async function getWorks() {
+  try {
     return await Axios.get('/works');
-  }catch(e){
+  } catch (e) {
     throw new Error(e);
   }
 }
