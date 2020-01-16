@@ -5,7 +5,7 @@ const Icon = () => {
     return (
         <div>
             <div className='IconArea'>
-                <span className='UserText'>UserName</span>
+                <span className='UserText'>KeitaOsaki</span>
             </div>
         </div>
     )

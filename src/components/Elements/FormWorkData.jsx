@@ -63,7 +63,7 @@ const FormWorkData = () => {
         <form>
           <div id="wpt">
             <div>
-              <input id="workPostTitle" type="text" value={workPostTitle} onChange={onWorkPostTitleChange} placeholder='作品名'></input>
+              <input id="workPostTitle" type="text" value={workPostTitle} onChange={onWorkPostTitleChange} placeholder='タイトル'></input>
             </div>
           </div>
           <div id="wpc">

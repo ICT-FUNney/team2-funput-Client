@@ -11,6 +11,8 @@
   grid-area: uploadArea;
   width: 68%;
   margin: 5px;
+  margin-top:30px;
+  margin-right: 5px;
 }
 
 #formArea {
@@ -18,4 +20,5 @@
   width: 68%;
   height: 80%;
   margin: 5px;
+  margin-left: 25px;
 }
